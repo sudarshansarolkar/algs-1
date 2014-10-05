@@ -107,7 +107,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     }
     
-    class RandListIterator<E> implements Iterator<E> {
+    private class RandListIterator<E> implements Iterator<E> {
 
         private E[] data;
         private int cur;

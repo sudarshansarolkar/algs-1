@@ -5,9 +5,14 @@ public class Subset {
         String line;
         RandomizedQueue<String> q = new RandomizedQueue<String>();
 
+        int count = 0;
         while (!StdIn.isEmpty()) {
             line = StdIn.readString();
+            //if (count >= k) {
+            //    q.dequeue();
+            //}
             q.enqueue(line);
+            count++;
         }
 
         for (int i = 0; i < k; i++) {
