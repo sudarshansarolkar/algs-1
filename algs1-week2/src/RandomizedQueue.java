@@ -18,7 +18,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     private Item[] data; // array of items
     private int N; // number of elements on stack
 
-    @SuppressWarnings("unchecked")
+    //@SuppressWarnings("unchecked")
     public RandomizedQueue() // construct an empty randomized queue
     {
         data = (Item[]) new Object[2];
@@ -39,7 +39,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     // resize the underlying array holding the elements
     private void resize(int capacity) {
         assert capacity >= N;
-        @SuppressWarnings("unchecked")
+        
         Item[] temp = (Item[]) new Object[capacity];
         for (int i = 0; i < N; i++) {
             temp[i] = data[i];
@@ -98,39 +98,40 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     {
 
     }
+    
+    class RandListIterator<E> implements Iterator<E> {
+
+        private E[] data;
+        private int cur;
+
+        
+        RandListIterator(E[] d, int size) {
+            this.data = (E[]) new Object[size];
+            int index = 0;
+            for (int i = size - 1; i >= 0; i--) {
+                data[index++] = d[i];
+            }
+            StdRandom.shuffle(data);
+            cur = 0;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return (cur < data.length);
+        }
+
+        @Override
+        public E next() {
+            if (!hasNext()) {
+                throw new java.util.NoSuchElementException();
+            }
+            return data[cur++];
+        }
+
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+
+    }
 }
 
-class RandListIterator<E> implements Iterator<E> {
-
-    private E[] data;
-    private int cur;
-
-    @SuppressWarnings("unchecked")
-    RandListIterator(E[] d, int size) {
-        this.data = (E[]) new Object[size];
-        int index = 0;
-        for (int i = size - 1; i >= 0; i--) {
-            data[index++] = d[i];
-        }
-        StdRandom.shuffle(data);
-        cur = 0;
-    }
-
-    @Override
-    public boolean hasNext() {
-        return (cur < data.length);
-    }
-
-    @Override
-    public E next() {
-        if (!hasNext()) {
-            throw new java.util.NoSuchElementException();
-        }
-        return data[cur++];
-    }
-
-    public void remove() {
-        throw new UnsupportedOperationException();
-    }
-
-}
