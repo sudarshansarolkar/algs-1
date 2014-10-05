@@ -70,6 +70,14 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         if (isEmpty())
             throw new NoSuchElementException("underflow");
         Item item = data[N - 1];
+        if (N > 1) {
+            int randLoc = StdRandom.uniform(N);
+            Item temp = data[randLoc];
+            data[randLoc] = item;
+            item = temp;
+        }
+       
+        
         data[N - 1] = null; // to avoid loitering
         N--;
         // shrink size of array if necessary
