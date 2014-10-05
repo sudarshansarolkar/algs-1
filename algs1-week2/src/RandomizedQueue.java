@@ -55,7 +55,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         if (N == data.length)
             resize(2 * data.length); // double size of array if necessary
         if (N > 1) {
-            int randLoc = StdRandom.uniform(N - 1);
+            int randLoc = StdRandom.uniform(N);
             Item temp = data[randLoc];
             data[randLoc] = item;
             data[N++] = temp; // add item
@@ -83,7 +83,8 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     {
         if (isEmpty())
             throw new NoSuchElementException("underflow");
-        return data[N - 1];
+        int randLoc = StdRandom.uniform(N);
+        return data[randLoc];
 
     }
 
@@ -101,7 +102,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
 class RandListIterator<E> implements Iterator<E> {
 
-    E data[];
+    private E[] data;
     private int cur;
 
     @SuppressWarnings("unchecked")

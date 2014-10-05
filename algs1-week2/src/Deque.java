@@ -100,7 +100,7 @@ public class Deque<Item> implements Iterable<Item> {
 
 class ListIterator<E> implements Iterator<E> {
 
-    private E data[];
+    private E[] data;
     private int cur;
 
     ListIterator(E[] data) {
