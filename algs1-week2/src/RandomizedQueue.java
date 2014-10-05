@@ -49,6 +49,9 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     public void enqueue(Item item) // add the item
     {
+        if (item == null) {
+            throw new NullPointerException("null element is not allowed");
+        }
         if (N == data.length)
             resize(2 * data.length); // double size of array if necessary
         if (N > 1) {
@@ -108,6 +111,7 @@ class RandListIterator<E> implements Iterator<E> {
         for (int i = size - 1; i >= 0; i--) {
             data[index++] = d[i];
         }
+        StdRandom.shuffle(data);
         cur = 0;
     }
 
