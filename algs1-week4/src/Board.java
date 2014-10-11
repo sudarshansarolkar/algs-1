@@ -4,10 +4,11 @@ public class Board {
     private int res = -1;
     private boolean goal = false;
     private boolean ischecked = false;
+    private Board twin;
 
     public Board(int[][] b) // construct a board from an N-by-N array of blocks
     {
-        blocks = b;
+        blocks = b.clone();
     }
 
     // (where blocks[i][j] = block in row i, column j)
@@ -111,6 +112,9 @@ public class Board {
     public Board twin() // a board that is obtained by exchanging two adjacent
                         // blocks in the same row
     {
+        if (twin != null) {
+            return twin;
+        }
         int N = blocks.length;
 
         /*
@@ -154,8 +158,9 @@ public class Board {
                 b[1][1] = tmp;
             }
         }
-
-        return new Board(b);
+        
+        twin = new Board(b);
+        return twin;
     }
 
     public boolean equals(Object y) // does this board equal y?
