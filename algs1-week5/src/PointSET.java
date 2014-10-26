@@ -2,7 +2,7 @@ import java.util.TreeSet;
 
 public class PointSET {
     private TreeSet<Point2D> rect = new TreeSet<Point2D>();
-    
+
     public PointSET() // construct an empty set of points
     {
 
@@ -23,7 +23,7 @@ public class PointSET {
     public void insert(Point2D p) // add the point to the set (if it is not
                                   // already in the set)
     {
-        if(!rect.contains(p))
+        if (!rect.contains(p))
             rect.add(p);
     }
 
@@ -35,7 +35,7 @@ public class PointSET {
 
     public void draw() // draw all points to standard draw
     {
-        for(Point2D p : rect)
+        for (Point2D p : rect)
             p.draw();
     }
 
@@ -43,16 +43,13 @@ public class PointSET {
                                                 // the rectangle
     {
         Queue<Point2D> q = new Queue<Point2D>();
-        for(Point2D p : this.rect)
-        {
-            if(p.x()<=rect.xmax() && 
-               p.x()>=rect.xmin() &&
-               p.y()<=rect.ymax() && 
-               p.y()>=rect.ymin() ){
+        for (Point2D p : this.rect) {
+            if (p.x() <= rect.xmax() && p.x() >= rect.xmin()
+                    && p.y() <= rect.ymax() && p.y() >= rect.ymin()) {
                 q.enqueue(p);
             }
         }
-        
+
         return q;
     }
 
@@ -61,10 +58,9 @@ public class PointSET {
     {
         double disMin = Double.POSITIVE_INFINITY;
         Point2D res = null;
-        for(Point2D pp : this.rect)
-        {
+        for (Point2D pp : this.rect) {
             double dis = pp.distanceSquaredTo(p);
-            if(dis < disMin){
+            if (dis < disMin) {
                 res = pp;
                 disMin = dis;
             }
