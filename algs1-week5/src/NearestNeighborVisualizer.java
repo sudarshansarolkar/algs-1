@@ -51,7 +51,7 @@ public class NearestNeighborVisualizer {
 
             // draw in blue the nearest neighbor (using kd-tree algorithm)
             StdDraw.setPenColor(StdDraw.BLUE);
-            //kdtree.nearest(query).draw();
+            kdtree.nearest(query).draw();
             StdDraw.show(0);
             StdDraw.show(40);
         }

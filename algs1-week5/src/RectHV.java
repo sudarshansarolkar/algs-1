@@ -13,6 +13,8 @@ public class RectHV {
 
     // construct the axis-aligned rectangle [xmin, xmax] x [ymin, ymax]
     public RectHV(double xmin, double ymin, double xmax, double ymax) {
+    	
+    	//System.out.printf("Rect called with %f %f %f %f \n",xmin,ymin,xmax,ymax);
         if (xmax < xmin || ymax < ymin) {
             throw new IllegalArgumentException("Invalid rectangle");
         }
@@ -20,6 +22,7 @@ public class RectHV {
         this.ymin = ymin;
         this.xmax = xmax;
         this.ymax = ymax;
+       
     }
 
     // accessor methods for 4 coordinates
