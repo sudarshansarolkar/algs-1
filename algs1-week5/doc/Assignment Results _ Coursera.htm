@@ -1,0 +1,2525 @@
+<!DOCTYPE html>
+<html class="supports-svg" xmlns:fb="http://ogp.me/ns/fb#" itemtype="http://schema.org"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE7"><meta name="fragment" content="!"><meta name="robots" content="NOODP"><meta charset="utf-8"><meta property="og:title" content="Coursera"><meta property="og:type" content="website"><meta property="og:image" content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png"><meta property="og:url" content="https://www.coursera.org/assignment/part_results?part_id=8"><meta property="og:site_name" content="Coursera"><meta property="og:locale" content="en_US"><meta property="og:description" content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits."><meta property="fb:admins" content="727836538,4807654"><meta property="fb:app_id" content="274998519252278"><meta name="twitter:site" content="Coursera"><meta name="twitter:app:name:iphone" content="Coursera"><meta name="twitter:app:name:ipad" content="Coursera"><meta name="twitter:app:name:googleplay" content="Coursera"><meta name="twitter:app:id:iphone" content="id736535961"><meta name="twitter:app:id:ipad" content="id736535961"><meta name="twitter:app:id:googleplay" content="org.coursera.android"><meta name="description" content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits."><meta name="image" content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png"><meta name="apple-itunes-app" content="app-id=736535961"><title>Assignment Results | Coursera</title>    <link href="Assignment%20Results%20_%20Coursera_files/spark.css" rel="stylesheet" type="text/css">
+      <link href="Assignment%20Results%20_%20Coursera_files/course.css" rel="stylesheet" type="text/css">
+    <link href="https://spark-public.s3.amazonaws.com/algs4partI/static/images/favicon.ico" rel="icon">
+<script src="Assignment%20Results%20_%20Coursera_files/ga.js" async="" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/routes.js" data-requiremodule="pages/spark/routes" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><meta content="summary" name="twitter:card"><meta content="Coursera" name="twitter:title"><meta content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits." name="twitter:description"><meta content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png" name="twitter:image:src"><script src="Assignment%20Results%20_%20Coursera_files/204.js" data-requiremodule="js/lib/204" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/student-page_002.js" data-requiremodule="pages/spark/views/template/student-page" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/student-page.js" data-requiremodule="pages/spark/views/template/student-page.html" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/sparkSurveyQuestionsSessionModel.js" data-requiremodule="bundles/assess/assessmentTypes/sparkSurveyQuestions/sparkSurveyQuestionsSessionModel" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/sessionModel.js" data-requiremodule="bundles/assess/assessmentTypes/quickQuestions/sessionModel" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/student-page_003.js" data-requiremodule="pages/spark/views/template/nls/student-page" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/SessionModel.js" data-requiremodule="bundles/assess/assessmentTypes/SessionModel" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/QuestionCollection.js" data-requiremodule="bundles/assess/framework/QuestionCollection" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/QuestionModel.js" data-requiremodule="bundles/assess/framework/QuestionModel" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/backbone.js" data-requiremodule="bundles/assess/lib/backbone.hascollections" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/underscore.js" data-requiremodule="js/lib/underscore.extend" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/header.js" data-requiremodule="pages/spark/views/template/header" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/sidebar.js" data-requiremodule="pages/spark/views/template/sidebar" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/readme.js" data-requiremodule="js/lib/readme" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/header_003.js" data-requiremodule="pages/spark/views/template/header.html" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/LearnerStoriesCollection.js" data-requiremodule="pages/analytics/models/LearnerStoriesCollection" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/assessApi.js" data-requiremodule="pages/spark-survey/assessApi" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/sidebar_002.js" data-requiremodule="pages/spark/views/template/sidebar.html" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/signature_track.js" data-requiremodule="spark/app/signature/js/signature_track" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/HelpCenterLinks.js" data-requiremodule="pages/help-center/data/HelpCenterLinks" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/header_002.js" data-requiremodule="pages/spark/views/template/nls/header" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/sidebar_003.js" data-requiremodule="pages/spark/views/template/nls/sidebar" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/LearnerStoryModel.js" data-requiremodule="pages/analytics/models/LearnerStoryModel" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/jade.js" data-requiremodule="js/vendor/jade" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/signatureTrackLastChanceModal.js" data-requiremodule="spark/app/signature/js/signatureTrackLastChanceModal.html" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/flexjoinLastChanceModal.js" data-requiremodule="spark/app/signature/js/flexjoinLastChanceModal.html" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/util.js" data-requiremodule="js/lib/util" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results%20_%20Coursera_files/path.js" data-requiremodule="js/lib/path" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script></head><body><div id="fb-root"></div><div id="spark-help" class="hide"></div><a href="https://courserahelp.zendesk.com/hc/en-us/requests/new" target="_blank"><div style="z-index: 1" data-networkprioritysupportwidget="" role="button" class="helpwidget-tab hide">Premium Support</div></a><div id="origami"><div><div><div class="coursera-page"><div class="coursera-header" role="menubar"><div class="hidden">This page features MathJax technology to render mathematical formulae.
+If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.</div><h1 class="hidden">Algorithms, Part I</h1><!-- UNTIL dashboard announcement expires 2014-08-31 (then delete this code)--><div role="banner" class="course-topbar container-fluid"><div class="row-fluid"><div class="span3"><a href="https://www.coursera.org/" data-if-linkable="add-referrer" class="course-topbar-logo"></a></div><div style="float:right;" class="course-topbar-nav-container span9"><h2 class="hidden">Top Navigation Bar</h2><ul class="course-topbar-nav-list"><li class="course-topbar-nav-list-item"><a href="https://www.coursera.org/courses" data-if-linkable="add-referrer">Courses</a></li><li tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" aria-owns="course-topbar-my" data-popup="#course-topbar-my" data-popup-bind-open="mouseenter" data-popup-close="data-popup-close" style="cursor:pointer;" data-popup-direction="se" class="course-topbar-nav-list-item"><a data-user-id="1350958">Sudarshan S<i class="icon-caret-down"></i></a></li></ul></div></div><div id="course-topbar-aboutus" class="course-topbar-sublist"><a href="https://www.coursera.org//about/" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">About Us</a><a href="https://www.coursera.org//about/careers" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">Careers</a><a href="https://www.coursera.org//about/people" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">People</a><a href="https://www.coursera.org//about/contact" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">Contact Us</a></div><div id="course-topbar-my" class="course-topbar-sublist"><a data-popup-close="data-popup-close" href="https://www.coursera.org/" target="_new" class="course-topbar-sublist-item">My Courses</a><a data-popup-close="data-popup-close" href="https://www.coursera.org/account/profile" target="_new" class="course-topbar-sublist-item">Profile</a><a data-popup-close="data-popup-close" href="https://www.coursera.org/account/records" target="_new" class="course-topbar-sublist-item">Course Records</a><a href="https://www.coursera.org/account/settings" target="_new" class="course-topbar-sublist-item">Settings</a><a href="https://class.coursera.org/algs4partI-006/class/preferences" class="course-topbar-sublist-item">Course Preferences</a><a href="https://class.coursera.org/algs4partI-006/auth/logout" class="course-topbar-sublist-item">Sign Out</a></div></div><div class="course-topbanner-wrapper"><div class="course-topbanner"><div class="course-topbanner-university-logo"><a href="https://www.coursera.org/princeton" target="_blank" data-if-linkable="add-referrer" title="https://www.coursera.org/princeton" class="coursera-university-color"><img src="Assignment%20Results%20_%20Coursera_files/university_logo.png" alt="princeton"></a></div><h1 class="course-topbanner-header"><a href="https://class.coursera.org/algs4partI-006/" data-if-linkable="modal-lock" class="course-topbanner-name coursera-university-color">Algorithms, Part I</a><br><span style="" class="course-topbanner-instructor">by Kevin Wayne, Robert Sedgewick</span></h1></div></div></div><div style="position:relative;" class="container-fluid"><div class="row-fluid"><div id="course-page-sidebar" role="navigation"><div class="coursera-sidebar" role="menubar"><div id="course-page-sidebar" role="navigation"><div class="course-navbar-container"><a href="https://class.coursera.org/algs4partI-006" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_index"><img src="Assignment%20Results%20_%20Coursera_files/logo.png" style="width: 205px;height: 116px;margin: -15px 0px 8px 1px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);" alt="Course Home Page"></a><div data-coursera-course-search-nav-widget="data-coursera-course-search-nav-widget" class="input-append course-search-nav-box"><form method="get" action="/algs4partI-006/class/search" data-js-search-form="data-js-search-form" class="form-inline minimized-search"><label for="course-search-nav-input" class="accessible-text-for-reader">Search this course</label><input id="course-search-nav-input" name="q" data-js-search-input="data-js-search-input" type="text">&nbsp;<button type="submit" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="search" class="btn icon-search"><span class="accessible-text-for-reader">Search</span></button></form></div><h2 class="hidden">Side Navigation Bar</h2><ul class="course-navbar-list"><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partI-006/class/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Home" class="coursera-university-color"><span>Home </span><span></span></a></li><li class="course-navbar-item"></li><li class="course-navbar-item"></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partI-006/wiki/view?page=syllabus" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Syllabus" class="coursera-university-color"><span>Syllabus </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partI-006/wiki/view?page=schedule" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Schedule" class="coursera-university-color"><span>Schedule </span><span></span></a></li><li class="course-navbar-item"></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partI-006/lecture/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Lectures" class="coursera-university-color"><span>Lectures </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partI-006/quiz/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Exercises" class="coursera-university-color"><span>Exercises </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partI-006/assignment/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Programming_Assignments" class="coursera-university-color"><span>Programming Assignments </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partI-006/quiz/index?quiz_type=homework" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Job_Interview_Questions" class="coursera-university-color"><span>Job Interview Questions </span><span></span></a></li><li class="course-navbar-item"></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partI-006/forum/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Discussion_Forums" class="coursera-university-color"><span>Discussion Forums </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partI-006/wiki/view?page=ScheduleGoogleHangouts" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Google+_Hangouts" class="coursera-university-color"><span>Google+ Hangouts </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partI-006/wiki/view?page=errata" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Errata" class="coursera-university-color"><span>Errata </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partI-006/quiz/index?quiz_type=survey" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Surveys" class="coursera-university-color"><span>Surveys </span><span></span></a></li><li class="course-navbar-item"></li><li class="course-navbar-item"><a href="http://algs4.cs.princeton.edu/" target="_blank" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Booksite" class="coursera-university-color"><span>Booksite </span><span class="icon-share"></span><span class="accessible-text-for-reader">opens in new browser tab</span></a></li><li class="course-navbar-item"><a href="http://www.meetup.com/Coursera/" target="_blank" class="coursera-university-color">Join a Meetup<span class="icon-share"></span><span class="accessible-text-for-reader">opens in new browser tab</span></a></li></ul><ul style="list-style-type:none;margin-left: 10px;"><li><a href="https://courserahelp.zendesk.com/" target="_blank" title="Open help articles in new window" class="coursera-university-color"><i class="icon-question-sign"></i>Help Articles</a></li></ul><ul style="list-style-type:none;margin-left: 10px;"><li><a href="https://class.coursera.org/algs4partI-006/forum/list?forum_id=10000&amp;url=https%3A%2F%2Fclass.coursera.org%2Falgs4partI-006%2Fassignment%2Fpart_results%3Fpart_id%3D8" class="coursera-university-color"><i class="icon-comments"></i>Course Materials Errors</a></li><li><a href="https://class.coursera.org/algs4partI-006/forum/list?forum_id=10001&amp;url=https%3A%2F%2Fclass.coursera.org%2Falgs4partI-006%2Fassignment%2Fpart_results%3Fpart_id%3D8" class="coursera-university-color"><i class="icon-comments"></i>Technical Issues</a></li></ul></div></div></div></div><div id="course-page-content" role="main"><div style="display: block;" id="spark" class="hide"><h2 class="course-page-header">Programming Assignment 5:  Kd-Trees | kdtree.zip
+  <a class="coursera-reporter-link" title="Click here if you're experiencing technical problems or found errors in the course materials." target="_blank" href="https://class.coursera.org/algs4partI-006/help/programming?url=https%3A%2F%2Fclass.coursera.org%2Falgs4partI-006%2Fassignment%2Fpart_results%3Fpart_id%3D8">
+     Help
+  </a>
+</h2>
+
+
+<table class="table table-condensed table-bordered table-striped">
+    <thead>
+        <tr>
+            <th colspan="3">Submission</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Submission time</td><td>Sun-26-Oct 14:08:23</td></tr>
+        <tr><td>Raw Score</td><td>96.34 / 100.00</td></tr>
+                <tr><td>Feedback</td><td>See the <a href="https://class.coursera.org/algs4partI-006/wiki/view?page=Assessments">Assessment Guide</a> for information on how to read this report. <h2>
+Assessment Summary</h2>
+<pre>Compilation:  <font color="#009900">PASSED</font>
+Style:        <font color="#009900">PASSED</font>
+Findbugs:     <font color="#009900">No potential bugs found.</font>
+API:          <font color="#009900">PASSED</font>
+
+Correctness:  <font color="#009900">21/21 tests passed</font>
+Memory:       <font color="#009900">8/8 tests passed</font>
+Timing:       <font color="#1A9900">35/41 tests passed</font>
+
+Aggregate score: <font color="#059900">96.34%</font> [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]</pre><h2>
+
+
+Assessment Details
+</h2>
+<pre>The following files were submitted:
+----------------------------------
+total 20K
+-rw-r--r-- 1 8.1K Oct 26 21:09 KdTree.java
+-rw-r--r-- 1 1.9K Oct 26 21:09 PointSET.java
+-rw-r--r-- 1 2.8K Oct 26 21:09 studentSubmission.zip
+
+
+******************************************************************************
+*  compiling
+******************************************************************************
+
+
+% javac PointSET.java
+*-----------------------------------------------------------
+================================================================
+
+% javac KdTree.java
+*-----------------------------------------------------------
+================================================================
+
+
+
+% checkstyle *.java
+*-----------------------------------------------------------
+================================================================
+
+
+% findbugs *.class
+*-----------------------------------------------------------
+================================================================
+
+
+Testing the APIs of your programs.
+*-----------------------------------------------------------
+PointSET:
+
+KdTree:
+
+================================================================
+
+
+******************************************************************************
+*  correctness
+******************************************************************************
+
+Testing methods in PointSET
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Test 1: Test size() by inserting N random points
+        (size may be less than N because of duplicates)
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 2: Test isEmpty() by checking for N = 0, 1, and 2 points
+  *  zero points
+  *  one point
+  *  two points
+==&gt; passed
+
+Test 3: Insert N random points and check contains() for random query points
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 4: Insert N random points and check nearest() for random query points
+  *  3000 random points in 100000-by-100000 grid
+  *  3000 random points in 10000-by-10000 grid
+  *  3000 random points in 1000-by-1000 grid
+  *  3000 random points in 100-by-100 grid
+  *  3000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 5: Insert N random points and check range() for random query rectangles
+  *  1000 random rectangles and points in 100000-by-100000 grid
+  *  1000 random rectangles and points in 10000-by-10000 grid
+  *  1000 random rectangles and points in 1000-by-1000 grid
+  *  1000 random rectangles and points in 100-by-100 grid
+  *  1000 random rectangles and points in 10-by-10 grid
+==&gt; passed
+
+Test 6: Intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3, p4, p5, and p6, respectively
+  *  10000 calls in 10000-by-10000 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 100-by-100 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 10-by-10 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 1-by-1 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+==&gt; passed
+
+Test 7: Intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3=0, p4, p5, and p6, respectively
+        (data structure with 0 points)
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.5, 0.5, 0.0, 0.0, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.6, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.0, 0.6, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.0, 0.0, 0.6
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.2, 0.2, 0.2
+==&gt; passed
+
+Test 8: Test whether two PointSET objects can be created at the same time
+==&gt; passed
+
+
+Total: 8/8 tests passed!
+
+================================================================
+
+Testing methods in KdTree
+*-----------------------------------------------------------
+Running 13 total tests.
+
+Test 1a: Insert N distinct points and check size() after each insertion
+  *  100000 random distinct points in 100000-by-100000 grid
+  *  100000 random distinct points in 10000-by-10000 grid
+  *  100000 random distinct points in 1000-by-1000 grid
+  *  10000 random distinct points in 100-by-100 grid
+  *  100 random distinct points in 10-by-10 grid
+  *  1 random distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 1b: Insert N points and check size() after each insertion
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+  *  10 random points in 1-by-1 grid
+==&gt; passed
+
+Test 2: Test isEmpty() by checking that it returns the right results for 0, 1, and 2 points
+  *  zero points
+  *  one point
+  *  two points
+==&gt; passed
+
+Test 3a: Insert N distinct points and call contains() with random query points
+  *  100000 random distinct points in 100000-by-100000 grid
+  *  100000 random distinct points in 10000-by-10000 grid
+  *  100000 random distinct points in 1000-by-1000 grid
+  *  10000 random distinct points in 100-by-100 grid
+  *  100 random distinct points in 10-by-10 grid
+  *  1 random distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 3b: Insert N points and call contains() with random query points
+  *  10000 random points in 1000-by-1000 grid
+  *  10000 random points in 100-by-100 grid
+  *  10000 random points in 10-by-10 grid
+  *  10000 random points in 1-by-1 grid
+==&gt; passed
+
+Test 4: Test whether two KdTree objects can be created at the same time
+==&gt; passed
+
+Test 5a: Insert N distinct points and call range() for random query rectangles
+  *  4000 random rectangles and 4000 distinct points in 100000-by-100000 grid
+  *  4000 random rectangles and 4000 distinct points in 10000-by-10000 grid
+  *  4000 random rectangles and 4000 distinct points in 1000-by-1000 grid
+  *  4000 random rectangles and 4000 distinct points in 100-by-100 grid
+  *  4000 random rectangles and 4000 distinct points in 10-by-10 grid
+  *  4000 random rectangles and 4000 distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 5b: Insert N points and call range() for random query rectangles
+  *  4000 random rectangles and 4000 random points in 10000-by-10000 grid
+  *  4000 random rectangles and 4000 random points in 1000-by-1000 grid
+  *  4000 random rectangles and 4000 random points in 100-by-100 grid
+  *  4000 random rectangles and 4000 random points in 10-by-10 grid
+  *  4000 random rectangles and 4000 random points in 1-by-1 grid
+==&gt; passed
+
+Test 5c: Insert N points and call range() for tiny
+rectangles enclosing each point.
+  *  4000 tiny rectangles and 4000 points in 100000-by-100000 grid
+  *  4000 tiny rectangles and 4000 points in 10000-by-10000 grid
+  *  4000 tiny rectangles and 4000 points in 1000-by-1000 grid
+  *  4000 tiny rectangles and 4000 points in 100-by-100 grid
+  *  4000 tiny rectangles and 4000 points in 10-by-10 grid
+==&gt; passed
+
+Test 6a: Insert N distinct points and call nearest() with random query points
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 6b: Insert N points and call nearest() with random query points
+  *  10000 random points in 1000-by-1000 grid
+  *  10000 random points in 100-by-100 grid
+  *  10000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 7: test intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3, p4, p5, and p6, respectively
+  *  20000 calls in 100000-by-100000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+  *  20000 calls in 10000-by-10000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+  *  20000 calls in 1000-by-1000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+  *  20000 calls in 100-by-100 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+  *  20000 calls in 10-by-10 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+  *  20000 calls in 1-by-1 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+==&gt; passed
+
+Test 8: test intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3 = 0, p4, p5, and p6, respectively
+        (a data structure with 0 points)
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.5, 0.5, 0.0, 0.0, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.6, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.0, 0.6, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.0, 0.0, 0.6
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.2, 0.2, 0.2
+==&gt; passed
+
+
+Total: 13/13 tests passed!
+
+================================================================
+
+******************************************************************************
+*  memory usage
+******************************************************************************
+
+Computing memory of Point2D
+*-----------------------------------------------------------
+Memory of Point2D object = 32 bytes
+================================================================
+
+
+
+Computing memory of RectHV
+*-----------------------------------------------------------
+Memory of RectHV object = 48 bytes
+================================================================
+
+
+
+Computing memory of KdTree
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Memory usage of a KdTree with N points (including Point2D and RectHV objects).
+Maximum allowed memory is 312N + 192 bytes.
+
+                 N       student (bytes)    reference (bytes)
+--------------------------------------------------------------
+=&gt; passed        1          160                160
+=&gt; passed        2          288                288
+=&gt; passed        5          672                672
+=&gt; passed       10         1312               1312
+=&gt; passed       25         3232               3232
+=&gt; passed      100        12832              12832
+=&gt; passed      400        51232              51232
+=&gt; passed      800       102432             102432
+==&gt; 8/8 tests passed
+
+Total: 8/8 tests passed!
+
+Student   memory (bytes) = 128.00 N + 32.00  (R^2 = 1.000)
+Reference memory (bytes) = 128.00 N + 32.00  (R^2 = 1.000)
+================================================================
+
+
+
+******************************************************************************
+*  timing
+******************************************************************************
+
+Timing PointSET
+*-----------------------------------------------------------
+Running 13 total tests.
+
+
+Inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed   160000     680851         
+=&gt; passed   320000     606061         
+=&gt; passed   640000     557491         
+=&gt; passed  1280000     487805         
+==&gt; 4/4 tests passed
+
+Performing contains() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000     714286         
+=&gt; passed    20000     710900         
+=&gt; passed    40000     657895         
+==&gt; 3/3 tests passed
+
+Performing range() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000       2387         
+=&gt; passed    20000       1127         
+=&gt; passed    40000        512         
+==&gt; 3/3 tests passed
+
+Performing nearest() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000       2799         
+=&gt; passed    20000       1296         
+=&gt; passed    40000        577         
+==&gt; 3/3 tests passed
+
+Total: 13/13 tests passed!
+
+================================================================
+
+
+
+Timing KdTree
+*-----------------------------------------------------------
+Running 28 total tests.
+
+
+Inserting N points into a 2d tree. The table gives the average number of calls to methods
+in RectHV and Point per call to insert().
+
+                                                                                                Point2D
+               N      ops per second       RectHV()           x()               y()             equals()
+----------------------------------------------------------------------------------------------------------------
+=&gt; passed   160000     451977               1.0              22.6              21.6              31.8         
+=&gt; passed   320000     459110               1.0              23.0              22.0              32.9         
+=&gt; passed   640000     418848               1.0              24.5              23.5              35.7         
+=&gt; passed  1280000     363018               1.0              26.6              25.6              37.9         
+==&gt; 4/4 tests passed
+
+Performing contains() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to contain().
+
+                                                                               Point2D
+               N      ops per second       x()               y()               equals()
+-----------------------------------------------------------------------------------------------
+=&gt; passed    10000     561798              18.5              17.5               9.2         
+=&gt; passed    20000     570342              19.7              18.7               8.7         
+=&gt; passed    40000     526316              21.8              20.8              10.4         
+=&gt; passed    80000     220588              22.0              21.0              10.3         
+=&gt; passed   160000     454545              23.2              22.2              11.7         
+=&gt; passed   320000     408719              25.0              24.0              11.9         
+=&gt; passed   640000     348837              25.7              24.7              12.7         
+=&gt; passed  1280000     264550              27.2              26.2              13.0         
+==&gt; 8/8 tests passed
+
+Performing range() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to range().
+
+               N      ops per second       intersects()      contains()        x()               y()
+---------------------------------------------------------------------------------------------------------------
+=&gt; passed    10000     177096              50.4              31.1              50.1              12.1         
+=&gt; passed    20000     290698              52.7              32.6              53.3              16.2         
+=&gt; passed    40000     254669              64.9              39.3              63.1              14.1         
+=&gt; passed    80000     275735              67.1              40.7              65.2              14.9         
+=&gt; passed   160000     198939              70.0              42.5              70.9              20.4         
+=&gt; passed   320000     163221              67.0              40.2              65.2              15.7         
+=&gt; passed   640000     161290              72.0              43.3              70.7              19.2         
+=&gt; passed  1280000     137615              78.7              47.0              74.8              14.2         
+==&gt; 8/8 tests passed
+
+Performing nearest() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to nearest().
+
+                                         Point2D                 RectHV
+               N      ops per second     distanceSquaredTo()     distanceSquaredTo()        x()               y()
+------------------------------------------------------------------------------------------------------------------------
+=&gt; passed    10000    92308                 394.9                  233.1                   643.4             602.4         
+=&gt; passed    20000    84175                 383.8                  227.1                   607.6             588.7         
+=&gt; <font color="#990000"><b>FAILED</b></font>    40000    30531                 865.4   (1.4x)         505.6   (1.7x)         1429.5   (1.8x)   1305.3   (1.6x)
+=&gt; <font color="#990000"><b>FAILED</b></font>    80000    39599                 775.7   (1.3x)         455.4   (1.5x)         1199.3   (1.5x)   1243.0   (1.6x)
+=&gt; <font color="#990000"><b>FAILED</b></font>   160000    16142   (0.5x)       1570.6   (2.6x)         913.7   (3.0x)         2565.5   (3.2x)   2345.5   (2.9x)
+=&gt; <font color="#990000"><b>FAILED</b></font>   320000    12360   (0.6x)       1761.6   (2.9x)        1032.0   (3.4x)         2942.2   (3.7x)   2724.3   (3.4x)
+=&gt; <font color="#990000"><b>FAILED</b></font>   640000     9166   (0.5x)       1765.3   (2.9x)        1032.9   (3.4x)         2881.6   (3.6x)   2812.5   (3.5x)
+=&gt; <font color="#990000"><b>FAILED</b></font>  1280000     6681   (0.3x)       2922.4   (4.9x)        1705.9   (5.7x)         4943.9   (6.2x)   4589.0   (5.7x)
+==&gt; 2/8 tests passed
+
+Total: 22/28 tests passed!
+
+================================================================
+
+
+
+</pre> </td></tr>
+    </tbody>
+</table>
+
+
+<table class="table table-condensed table-bordered table-striped">
+    <thead>
+        <tr>
+            <th colspan="3">Submission</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Submission time</td><td>Sun-26-Oct 13:55:48</td></tr>
+        <tr><td>Raw Score</td><td>82.93 / 100.00</td></tr>
+                <tr><td>Feedback</td><td>See the <a href="https://class.coursera.org/algs4partI-006/wiki/view?page=Assessments">Assessment Guide</a> for information on how to read this report. <h2>
+Assessment Summary</h2>
+<pre>Compilation:  <font color="#009900">PASSED</font>
+Style:        <font color="#009900">PASSED</font>
+Findbugs:     <font color="#009900">No potential bugs found.</font>
+API:          <font color="#009900">PASSED</font>
+
+Correctness:  <font color="#009900">21/21 tests passed</font>
+Memory:       <font color="#009900">8/8 tests passed</font>
+Timing:       <font color="#994700">13/41 tests passed</font>
+
+Aggregate score: <font color="#1F9900">82.93%</font> [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]</pre><h2>
+
+
+Assessment Details
+</h2>
+<pre>The following files were submitted:
+----------------------------------
+total 16K
+-rw-r--r-- 1 7.9K Oct 26 20:50 KdTree.java
+-rw-r--r-- 1 1.9K Oct 26 20:50 PointSET.java
+-rw-r--r-- 1 2.8K Oct 26 20:50 studentSubmission.zip
+
+
+******************************************************************************
+*  compiling
+******************************************************************************
+
+
+% javac PointSET.java
+*-----------------------------------------------------------
+================================================================
+
+% javac KdTree.java
+*-----------------------------------------------------------
+================================================================
+
+
+
+% checkstyle *.java
+*-----------------------------------------------------------
+================================================================
+
+
+% findbugs *.class
+*-----------------------------------------------------------
+================================================================
+
+
+Testing the APIs of your programs.
+*-----------------------------------------------------------
+PointSET:
+
+KdTree:
+
+================================================================
+
+
+******************************************************************************
+*  correctness
+******************************************************************************
+
+Testing methods in PointSET
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Test 1: Test size() by inserting N random points
+        (size may be less than N because of duplicates)
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 2: Test isEmpty() by checking for N = 0, 1, and 2 points
+  *  zero points
+  *  one point
+  *  two points
+==&gt; passed
+
+Test 3: Insert N random points and check contains() for random query points
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 4: Insert N random points and check nearest() for random query points
+  *  3000 random points in 100000-by-100000 grid
+  *  3000 random points in 10000-by-10000 grid
+  *  3000 random points in 1000-by-1000 grid
+  *  3000 random points in 100-by-100 grid
+  *  3000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 5: Insert N random points and check range() for random query rectangles
+  *  1000 random rectangles and points in 100000-by-100000 grid
+  *  1000 random rectangles and points in 10000-by-10000 grid
+  *  1000 random rectangles and points in 1000-by-1000 grid
+  *  1000 random rectangles and points in 100-by-100 grid
+  *  1000 random rectangles and points in 10-by-10 grid
+==&gt; passed
+
+Test 6: Intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3, p4, p5, and p6, respectively
+  *  10000 calls in 10000-by-10000 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 100-by-100 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 10-by-10 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 1-by-1 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+==&gt; passed
+
+Test 7: Intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3=0, p4, p5, and p6, respectively
+        (data structure with 0 points)
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.5, 0.5, 0.0, 0.0, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.6, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.0, 0.6, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.0, 0.0, 0.6
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.2, 0.2, 0.2
+==&gt; passed
+
+Test 8: Test whether two PointSET objects can be created at the same time
+==&gt; passed
+
+
+Total: 8/8 tests passed!
+
+================================================================
+
+Testing methods in KdTree
+*-----------------------------------------------------------
+Running 13 total tests.
+
+Test 1a: Insert N distinct points and check size() after each insertion
+  *  100000 random distinct points in 100000-by-100000 grid
+  *  100000 random distinct points in 10000-by-10000 grid
+  *  100000 random distinct points in 1000-by-1000 grid
+  *  10000 random distinct points in 100-by-100 grid
+  *  100 random distinct points in 10-by-10 grid
+  *  1 random distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 1b: Insert N points and check size() after each insertion
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+  *  10 random points in 1-by-1 grid
+==&gt; passed
+
+Test 2: Test isEmpty() by checking that it returns the right results for 0, 1, and 2 points
+  *  zero points
+  *  one point
+  *  two points
+==&gt; passed
+
+Test 3a: Insert N distinct points and call contains() with random query points
+  *  100000 random distinct points in 100000-by-100000 grid
+  *  100000 random distinct points in 10000-by-10000 grid
+  *  100000 random distinct points in 1000-by-1000 grid
+  *  10000 random distinct points in 100-by-100 grid
+  *  100 random distinct points in 10-by-10 grid
+  *  1 random distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 3b: Insert N points and call contains() with random query points
+  *  10000 random points in 1000-by-1000 grid
+  *  10000 random points in 100-by-100 grid
+  *  10000 random points in 10-by-10 grid
+  *  10000 random points in 1-by-1 grid
+==&gt; passed
+
+Test 4: Test whether two KdTree objects can be created at the same time
+==&gt; passed
+
+Test 5a: Insert N distinct points and call range() for random query rectangles
+  *  4000 random rectangles and 4000 distinct points in 100000-by-100000 grid
+  *  4000 random rectangles and 4000 distinct points in 10000-by-10000 grid
+  *  4000 random rectangles and 4000 distinct points in 1000-by-1000 grid
+  *  4000 random rectangles and 4000 distinct points in 100-by-100 grid
+  *  4000 random rectangles and 4000 distinct points in 10-by-10 grid
+  *  4000 random rectangles and 4000 distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 5b: Insert N points and call range() for random query rectangles
+  *  4000 random rectangles and 4000 random points in 10000-by-10000 grid
+  *  4000 random rectangles and 4000 random points in 1000-by-1000 grid
+  *  4000 random rectangles and 4000 random points in 100-by-100 grid
+  *  4000 random rectangles and 4000 random points in 10-by-10 grid
+  *  4000 random rectangles and 4000 random points in 1-by-1 grid
+==&gt; passed
+
+Test 5c: Insert N points and call range() for tiny
+rectangles enclosing each point.
+  *  4000 tiny rectangles and 4000 points in 100000-by-100000 grid
+  *  4000 tiny rectangles and 4000 points in 10000-by-10000 grid
+  *  4000 tiny rectangles and 4000 points in 1000-by-1000 grid
+  *  4000 tiny rectangles and 4000 points in 100-by-100 grid
+  *  4000 tiny rectangles and 4000 points in 10-by-10 grid
+==&gt; passed
+
+Test 6a: Insert N distinct points and call nearest() with random query points
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 6b: Insert N points and call nearest() with random query points
+  *  10000 random points in 1000-by-1000 grid
+  *  10000 random points in 100-by-100 grid
+  *  10000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 7: test intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3, p4, p5, and p6, respectively
+  *  20000 calls in 100000-by-100000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+  *  20000 calls in 10000-by-10000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+  *  20000 calls in 1000-by-1000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+  *  20000 calls in 100-by-100 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+  *  20000 calls in 10-by-10 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+  *  20000 calls in 1-by-1 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+==&gt; passed
+
+Test 8: test intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3 = 0, p4, p5, and p6, respectively
+        (a data structure with 0 points)
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.5, 0.5, 0.0, 0.0, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.6, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.0, 0.6, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.0, 0.0, 0.6
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.2, 0.2, 0.2
+==&gt; passed
+
+
+Total: 13/13 tests passed!
+
+================================================================
+
+******************************************************************************
+*  memory usage
+******************************************************************************
+
+Computing memory of Point2D
+*-----------------------------------------------------------
+Memory of Point2D object = 32 bytes
+================================================================
+
+
+
+Computing memory of RectHV
+*-----------------------------------------------------------
+Memory of RectHV object = 48 bytes
+================================================================
+
+
+
+Computing memory of KdTree
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Memory usage of a KdTree with N points (including Point2D and RectHV objects).
+Maximum allowed memory is 312N + 192 bytes.
+
+                 N       student (bytes)    reference (bytes)
+--------------------------------------------------------------
+=&gt; passed        1          160                160
+=&gt; passed        2          288                288
+=&gt; passed        5          672                672
+=&gt; passed       10         1312               1312
+=&gt; passed       25         3232               3232
+=&gt; passed      100        12832              12832
+=&gt; passed      400        51232              51232
+=&gt; passed      800       102432             102432
+==&gt; 8/8 tests passed
+
+Total: 8/8 tests passed!
+
+Student   memory (bytes) = 128.00 N + 32.00  (R^2 = 1.000)
+Reference memory (bytes) = 128.00 N + 32.00  (R^2 = 1.000)
+================================================================
+
+
+
+******************************************************************************
+*  timing
+******************************************************************************
+
+Timing PointSET
+*-----------------------------------------------------------
+Running 13 total tests.
+
+
+Inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed   160000     565371         
+=&gt; passed   320000     641283         
+=&gt; passed   640000     519481         
+=&gt; passed  1280000     445993         
+==&gt; 4/4 tests passed
+
+Performing contains() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000     842697         
+=&gt; passed    20000     847458         
+=&gt; passed    40000     750000         
+==&gt; 3/3 tests passed
+
+Performing range() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000       2511         
+=&gt; passed    20000       1217         
+=&gt; passed    40000        368         
+==&gt; 3/3 tests passed
+
+Performing nearest() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000       2855         
+=&gt; passed    20000       1382         
+=&gt; passed    40000        478         
+==&gt; 3/3 tests passed
+
+Total: 13/13 tests passed!
+
+================================================================
+
+
+
+Timing KdTree
+*-----------------------------------------------------------
+Running 28 total tests.
+
+
+Inserting N points into a 2d tree. The table gives the average number of calls to methods
+in RectHV and Point per call to insert().
+
+                                                                                                Point2D
+               N      ops per second       RectHV()           x()               y()             equals()
+----------------------------------------------------------------------------------------------------------------
+=&gt; passed   160000     535117               1.0              22.6              21.6              31.8         
+=&gt; passed   320000     470588               1.0              23.0              22.0              32.9         
+=&gt; passed   640000     305052               1.0              24.5              23.5              35.7         
+=&gt; passed  1280000     303318               1.0              26.6              25.6              37.9         
+==&gt; 4/4 tests passed
+
+Performing contains() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to contain().
+
+                                                                               Point2D
+               N      ops per second       x()               y()               equals()
+-----------------------------------------------------------------------------------------------
+=&gt; passed    10000     714286              18.5              17.5               9.2         
+=&gt; passed    20000     738916              19.7              18.7               8.7         
+=&gt; passed    40000     588235              21.8              20.8              10.4         
+=&gt; passed    80000     511945              22.0              21.0              10.3         
+=&gt; passed   160000     490196              23.2              22.2              11.7         
+=&gt; passed   320000     307377              25.0              24.0              11.9         
+=&gt; passed   640000     291829              25.7              24.7              12.7         
+=&gt; passed  1280000     245902              27.2              26.2              13.0         
+==&gt; 8/8 tests passed
+
+Performing range() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to range().
+
+               N      ops per second       intersects()      contains()        x()               y()
+---------------------------------------------------------------------------------------------------------------
+=&gt; passed    10000     381679              50.4              31.1              50.1              12.1         
+=&gt; passed    20000     357143              52.7              32.6              53.3              16.2         
+=&gt; passed    40000     255537              64.9              39.3              63.1              14.1         
+=&gt; passed    80000     194805              67.1              40.7              65.2              14.9         
+=&gt; passed   160000     167973              70.0              42.5              70.9              20.4         
+=&gt; passed   320000     161464              67.0              40.2              65.2              15.7         
+=&gt; passed   640000     129983              72.0              43.3              70.7              19.2         
+=&gt; passed  1280000     124585              78.7              47.0              74.8              14.2         
+==&gt; 8/8 tests passed
+
+Performing nearest() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to nearest().
+
+                                         Point2D                 RectHV
+               N      ops per second     distanceSquaredTo()     distanceSquaredTo()        x()               y()
+------------------------------------------------------------------------------------------------------------------------
+=&gt; <font color="#990000"><b>FAILED</b></font>    10000    86356                 540.1                  216.6                  1062.8   (1.3x)    649.2         
+=&gt; <font color="#990000"><b>FAILED</b></font>    20000    80429                 522.2                  208.9                  1006.8   (1.3x)    657.2         
+=&gt; <font color="#990000"><b>FAILED</b></font>    40000    31146                1204.1   (2.0x)         484.4   (1.6x)         2378.5   (3.0x)   1391.3   (1.7x)
+=&gt; <font color="#990000"><b>FAILED</b></font>    80000    23143   (0.8x)       1073.2   (1.8x)         433.1   (1.4x)         2025.1   (2.5x)   1446.9   (1.8x)
+=&gt; <font color="#990000"><b>FAILED</b></font>   160000    13296   (0.4x)       1510.6   (2.5x)         610.9   (2.0x)         2944.7   (3.7x)   1849.9   (2.3x)
+=&gt; <font color="#990000"><b>FAILED</b></font>   320000     9109   (0.5x)       1742.8   (2.9x)         708.8   (2.4x)         3448.4   (4.3x)   2123.0   (2.7x)
+
+Total: 0/28 tests passed:<font color="#990000"><b>Test aborted. Ran out of time or crashed before completion.</b></font>
+================================================================
+
+
+
+</pre> </td></tr>
+    </tbody>
+</table>
+
+
+<table class="table table-condensed table-bordered table-striped">
+    <thead>
+        <tr>
+            <th colspan="3">Submission</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Submission time</td><td>Sun-26-Oct 12:04:12</td></tr>
+        <tr><td>Raw Score</td><td>85.23 / 100.00</td></tr>
+                <tr><td>Feedback</td><td>See the <a href="https://class.coursera.org/algs4partI-006/wiki/view?page=Assessments">Assessment Guide</a> for information on how to read this report. <h2>
+Assessment Summary</h2>
+<pre>Compilation:  <font color="#009900">PASSED</font>
+Style:        <font color="#009900">PASSED</font>
+Findbugs:     <font color="#009900">No potential bugs found.</font>
+API:          <font color="#009900">PASSED</font>
+
+Correctness:  <font color="#199900">18/21 tests passed</font>
+Memory:       <font color="#009900">8/8 tests passed</font>
+Timing:       <font color="#2B9900">32/41 tests passed</font>
+
+Aggregate score: <font color="#1A9900">85.23%</font> [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]</pre><h2>
+
+
+Assessment Details
+</h2>
+<pre>The following files were submitted:
+----------------------------------
+total 16K
+-rw-r--r-- 1 8.0K Oct 26 19:20 KdTree.java
+-rw-r--r-- 1 1.9K Oct 26 19:20 PointSET.java
+-rw-r--r-- 1 2.8K Oct 26 19:20 studentSubmission.zip
+
+
+******************************************************************************
+*  compiling
+******************************************************************************
+
+
+% javac PointSET.java
+*-----------------------------------------------------------
+================================================================
+
+% javac KdTree.java
+*-----------------------------------------------------------
+================================================================
+
+
+
+% checkstyle *.java
+*-----------------------------------------------------------
+================================================================
+
+
+% findbugs *.class
+*-----------------------------------------------------------
+================================================================
+
+
+Testing the APIs of your programs.
+*-----------------------------------------------------------
+PointSET:
+
+KdTree:
+
+================================================================
+
+
+******************************************************************************
+*  correctness
+******************************************************************************
+
+Testing methods in PointSET
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Test 1: Test size() by inserting N random points
+        (size may be less than N because of duplicates)
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 2: Test isEmpty() by checking for N = 0, 1, and 2 points
+  *  zero points
+  *  one point
+  *  two points
+==&gt; passed
+
+Test 3: Insert N random points and check contains() for random query points
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 4: Insert N random points and check nearest() for random query points
+  *  3000 random points in 100000-by-100000 grid
+  *  3000 random points in 10000-by-10000 grid
+  *  3000 random points in 1000-by-1000 grid
+  *  3000 random points in 100-by-100 grid
+  *  3000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 5: Insert N random points and check range() for random query rectangles
+  *  1000 random rectangles and points in 100000-by-100000 grid
+  *  1000 random rectangles and points in 10000-by-10000 grid
+  *  1000 random rectangles and points in 1000-by-1000 grid
+  *  1000 random rectangles and points in 100-by-100 grid
+  *  1000 random rectangles and points in 10-by-10 grid
+==&gt; passed
+
+Test 6: Intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3, p4, p5, and p6, respectively
+  *  10000 calls in 10000-by-10000 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 100-by-100 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 10-by-10 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 1-by-1 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+==&gt; passed
+
+Test 7: Intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3=0, p4, p5, and p6, respectively
+        (data structure with 0 points)
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.5, 0.5, 0.0, 0.0, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.6, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.0, 0.6, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.0, 0.0, 0.6
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.2, 0.2, 0.2
+==&gt; passed
+
+Test 8: Test whether two PointSET objects can be created at the same time
+==&gt; passed
+
+
+Total: 8/8 tests passed!
+
+================================================================
+
+Testing methods in KdTree
+*-----------------------------------------------------------
+Running 13 total tests.
+
+Test 1a: Insert N distinct points and check size() after each insertion
+  *  100000 random distinct points in 100000-by-100000 grid
+  *  100000 random distinct points in 10000-by-10000 grid
+  *  100000 random distinct points in 1000-by-1000 grid
+  *  10000 random distinct points in 100-by-100 grid
+  *  100 random distinct points in 10-by-10 grid
+  *  1 random distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 1b: Insert N points and check size() after each insertion
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+  *  10 random points in 1-by-1 grid
+==&gt; passed
+
+Test 2: Test isEmpty() by checking that it returns the right results for 0, 1, and 2 points
+  *  zero points
+  *  one point
+  *  two points
+==&gt; passed
+
+Test 3a: Insert N distinct points and call contains() with random query points
+  *  100000 random distinct points in 100000-by-100000 grid
+  *  100000 random distinct points in 10000-by-10000 grid
+  *  100000 random distinct points in 1000-by-1000 grid
+  *  10000 random distinct points in 100-by-100 grid
+  *  100 random distinct points in 10-by-10 grid
+  *  1 random distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 3b: Insert N points and call contains() with random query points
+  *  10000 random points in 1000-by-1000 grid
+  *  10000 random points in 100-by-100 grid
+  *  10000 random points in 10-by-10 grid
+  *  10000 random points in 1-by-1 grid
+==&gt; passed
+
+Test 4: Test whether two KdTree objects can be created at the same time
+==&gt; passed
+
+Test 5a: Insert N distinct points and call range() for random query rectangles
+  *  4000 random rectangles and 4000 distinct points in 100000-by-100000 grid
+  *  4000 random rectangles and 4000 distinct points in 10000-by-10000 grid
+  *  4000 random rectangles and 4000 distinct points in 1000-by-1000 grid
+  *  4000 random rectangles and 4000 distinct points in 100-by-100 grid
+  *  4000 random rectangles and 4000 distinct points in 10-by-10 grid
+  *  4000 random rectangles and 4000 distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 5b: Insert N points and call range() for random query rectangles
+  *  4000 random rectangles and 4000 random points in 10000-by-10000 grid
+  *  4000 random rectangles and 4000 random points in 1000-by-1000 grid
+  *  4000 random rectangles and 4000 random points in 100-by-100 grid
+  *  4000 random rectangles and 4000 random points in 10-by-10 grid
+  *  4000 random rectangles and 4000 random points in 1-by-1 grid
+==&gt; passed
+
+Test 5c: Insert N points and call range() for tiny
+rectangles enclosing each point.
+  *  4000 tiny rectangles and 4000 points in 100000-by-100000 grid
+  *  4000 tiny rectangles and 4000 points in 10000-by-10000 grid
+  *  4000 tiny rectangles and 4000 points in 1000-by-1000 grid
+  *  4000 tiny rectangles and 4000 points in 100-by-100 grid
+  *  4000 tiny rectangles and 4000 points in 10-by-10 grid
+==&gt; passed
+
+Test 6a: Insert N distinct points and call nearest() with random query points
+  *  100000 random points in 100000-by-100000 grid
+      -  failed on trial 2 of 100000
+      -  student   nearest()    = (0.20861, 0.83896)
+      -  reference nearest()    = (0.20509, 0.83878)
+      -  student   distanceTo() = 0.0028206382256503524
+      -  reference distanceTo() = 0.002707397274136127
+  *  100000 random points in 10000-by-10000 grid
+      -  failed on trial 13 of 100000
+      -  student   nearest()    = (0.6645, 0.2506)
+      -  reference nearest()    = (0.6643, 0.2553)
+      -  student   distanceTo() = 0.0033060550509633317
+      -  reference distanceTo() = 0.0014000000000000123
+  *  100000 random points in 1000-by-1000 grid
+      -  failed on trial 12 of 100000
+      -  student   nearest()    = (0.328, 0.06)
+      -  reference nearest()    = (0.325, 0.059)
+      -  student   distanceTo() = 0.00509901951359279
+      -  reference distanceTo() = 0.0028284271247461927
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 6b: Insert N points and call nearest() with random query points
+  *  10000 random points in 1000-by-1000 grid
+      -  failed on trial 8 of 10000
+      -  student   nearest()    = (0.152, 0.985)
+      -  reference nearest()    = (0.157, 0.977)
+      -  student   distanceTo() = 0.008062257748298557
+      -  reference distanceTo() = 0.007615773105863915
+  *  10000 random points in 100-by-100 grid
+      -  failed on trial 400 of 10000
+      -  student   nearest()    = (0.31, 0.0)
+      -  reference nearest()    = (0.33, 0.01)
+      -  student   distanceTo() = 0.020000000000000018
+      -  reference distanceTo() = 0.01
+  *  10000 random points in 10-by-10 grid
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 7: test intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3, p4, p5, and p6, respectively
+  *  20000 calls in 100000-by-100000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 39 of 20000
+      -  student   nearest()    = (0.66325, 0.11576)
+      -  reference nearest()    = (0.66236, 0.04103)
+      -  student   distanceTo() = 0.1066805483675445
+      -  reference distanceTo() = 0.08607740005367266
+  *  20000 calls in 10000-by-10000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 43 of 20000
+      -  student   nearest()    = (0.2471, 0.0758)
+      -  reference nearest()    = (0.3484, 0.0044)
+      -  student   distanceTo() = 0.11326508729524737
+      -  reference distanceTo() = 0.08348203399534537
+  *  20000 calls in 1000-by-1000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 97 of 20000
+      -  student   nearest()    = (0.809, 0.089)
+      -  reference nearest()    = (0.642, 0.094)
+      -  student   distanceTo() = 0.11067520047418038
+      -  reference distanceTo() = 0.092200867674876
+  *  20000 calls in 100-by-100 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 56 of 20000
+      -  student   nearest()    = (0.87, 0.61)
+      -  reference nearest()    = (0.48, 0.27)
+      -  student   distanceTo() = 0.5011985634456667
+      -  reference distanceTo() = 0.18027756377319948
+  *  20000 calls in 10-by-10 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 234 of 20000
+      -  student   nearest()    = (0.6, 0.8)
+      -  reference nearest()    = (0.5, 1.0)
+      -  student   distanceTo() = 0.14142135623730948
+      -  reference distanceTo() = 0.09999999999999998
+  *  20000 calls in 1-by-1 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 8: test intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3 = 0, p4, p5, and p6, respectively
+        (a data structure with 0 points)
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.5, 0.5, 0.0, 0.0, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.6, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.0, 0.6, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.0, 0.0, 0.6
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.2, 0.2, 0.2
+==&gt; passed
+
+
+Total: 10/13 tests passed!
+
+================================================================
+
+******************************************************************************
+*  memory usage
+******************************************************************************
+
+Computing memory of Point2D
+*-----------------------------------------------------------
+Memory of Point2D object = 32 bytes
+================================================================
+
+
+
+Computing memory of RectHV
+*-----------------------------------------------------------
+Memory of RectHV object = 48 bytes
+================================================================
+
+
+
+Computing memory of KdTree
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Memory usage of a KdTree with N points (including Point2D and RectHV objects).
+Maximum allowed memory is 312N + 192 bytes.
+
+                 N       student (bytes)    reference (bytes)
+--------------------------------------------------------------
+=&gt; passed        1          160                160
+=&gt; passed        2          288                288
+=&gt; passed        5          672                672
+=&gt; passed       10         1312               1312
+=&gt; passed       25         3232               3232
+=&gt; passed      100        12832              12832
+=&gt; passed      400        51232              51232
+=&gt; passed      800       102432             102432
+==&gt; 8/8 tests passed
+
+Total: 8/8 tests passed!
+
+Student   memory (bytes) = 128.00 N + 32.00  (R^2 = 1.000)
+Reference memory (bytes) = 128.00 N + 32.00  (R^2 = 1.000)
+================================================================
+
+
+
+******************************************************************************
+*  timing
+******************************************************************************
+
+Timing PointSET
+*-----------------------------------------------------------
+Running 13 total tests.
+
+
+Inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed   160000     282686         
+=&gt; passed   320000     245211         
+=&gt; passed   640000     237565         
+=&gt; passed  1280000     213689         
+==&gt; 4/4 tests passed
+
+Performing contains() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000     335570         
+=&gt; passed    20000     321199         
+=&gt; passed    40000     280374         
+==&gt; 3/3 tests passed
+
+Performing range() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000       1141         
+=&gt; passed    20000        542         
+=&gt; passed    40000        243         
+==&gt; 3/3 tests passed
+
+Performing nearest() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000        877         
+=&gt; passed    20000        426         
+=&gt; passed    40000        209         
+==&gt; 3/3 tests passed
+
+Total: 13/13 tests passed!
+
+================================================================
+
+
+
+Timing KdTree
+*-----------------------------------------------------------
+Running 28 total tests.
+
+
+Inserting N points into a 2d tree. The table gives the average number of calls to methods
+in RectHV and Point per call to insert().
+
+                                                                                                Point2D
+               N      ops per second       RectHV()           x()               y()             equals()
+----------------------------------------------------------------------------------------------------------------
+=&gt; passed   160000     127085               1.0              22.6              21.6              31.8         
+=&gt; passed   320000     123409               1.0              23.0              22.0              32.9         
+=&gt; passed   640000     129241               1.0              24.5              23.5              35.7         
+=&gt; passed  1280000     145322               1.0              26.6              25.6              37.9         
+==&gt; 4/4 tests passed
+
+Performing contains() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to contain().
+
+                                                                               Point2D
+               N      ops per second       x()               y()               equals()
+-----------------------------------------------------------------------------------------------
+=&gt; passed    10000     255973              18.5              17.5               9.2         
+=&gt; passed    20000     285171              19.7              18.7               8.7         
+=&gt; passed    40000     238474              21.8              20.8              10.4         
+=&gt; <font color="#990000"><b>FAILED</b></font>    80000      84128   (0.8x)     22.0              21.0              10.3         
+=&gt; passed   160000     162866              23.2              22.2              11.7         
+=&gt; passed   320000     165746              25.0              24.0              11.9         
+=&gt; passed   640000     120579              25.7              24.7              12.7         
+=&gt; passed  1280000     105708              27.2              26.2              13.0         
+==&gt; 7/8 tests passed
+
+Performing range() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to range().
+
+               N      ops per second       intersects()      contains()        x()               y()
+---------------------------------------------------------------------------------------------------------------
+=&gt; passed    10000      81566              50.4              31.1              50.1              12.1         
+=&gt; passed    20000     126263              52.7              32.6              53.3              16.2         
+=&gt; passed    40000     107914              64.9              39.3              63.1              14.1         
+=&gt; passed    80000     104094              67.1              40.7              65.2              14.9         
+=&gt; passed   160000      73028              70.0              42.5              70.9              20.4         
+=&gt; passed   320000      68587              67.0              40.2              65.2              15.7         
+=&gt; passed   640000      69767              72.0              43.3              70.7              19.2         
+=&gt; passed  1280000      62396              78.7              47.0              74.8              14.2         
+==&gt; 8/8 tests passed
+
+Performing nearest() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to nearest().
+
+                                         Point2D                 RectHV
+               N      ops per second     distanceSquaredTo()     distanceSquaredTo()        x()               y()
+------------------------------------------------------------------------------------------------------------------------
+=&gt; <font color="#990000"><b>FAILED</b></font>    10000    11191   (0.4x)       2766.1   (4.6x)           0.0                  1078.3   (1.3x)    889.1   (1.1x)
+=&gt; <font color="#990000"><b>FAILED</b></font>    20000     7379   (0.2x)       4839.1   (8.1x)           0.0                  1777.3   (2.2x)   1469.8   (1.8x)
+=&gt; <font color="#990000"><b>FAILED</b></font>    40000     5735   (0.2x)       5962.6   (9.9x)           0.0                  2269.4   (2.8x)   1829.5   (2.3x)
+=&gt; <font color="#990000"><b>FAILED</b></font>    80000     2365   (0.1x)      18472.2  (30.8x)           0.0                  7130.7   (8.9x)   5187.8   (6.5x)
+=&gt; <font color="#990000"><b>FAILED</b></font>   160000     1037   (0.0x)      50496.2  (84.2x)           0.0                 20469.4  (25.6x)  13482.7  (16.9x)
+=&gt; <font color="#990000"><b>FAILED</b></font>   320000      381   (0.0x)     109590.3 (182.7x)           0.0                 38137.4  (47.7x)  29134.2  (36.4x)
+=&gt; <font color="#990000"><b>FAILED</b></font>   640000      138   (0.0x)     175266.3 (292.1x)           0.0                 62664.7  (78.3x)  45870.0  (57.3x)
+=&gt; <font color="#990000"><b>FAILED</b></font>  1280000       64   (0.0x)     302221.2 (503.7x)           0.0                137236.7 (171.5x)  77585.8  (97.0x)
+==&gt; 0/8 tests passed
+
+Total: 19/28 tests passed!
+
+================================================================
+
+
+
+</pre> </td></tr>
+    </tbody>
+</table>
+
+
+<table class="table table-condensed table-bordered table-striped">
+    <thead>
+        <tr>
+            <th colspan="3">Submission</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Submission time</td><td>Sun-26-Oct 10:20:37</td></tr>
+        <tr><td>Raw Score</td><td>90.71 / 100.00</td></tr>
+                <tr><td>Feedback</td><td>See the <a href="https://class.coursera.org/algs4partI-006/wiki/view?page=Assessments">Assessment Guide</a> for information on how to read this report. <h2>
+Assessment Summary</h2>
+<pre>Compilation:  <font color="#009900">PASSED</font>
+Style:        <font color="#009900">PASSED</font>
+Findbugs:     <font color="#009900">No potential bugs found.</font>
+API:          <font color="#009900">PASSED</font>
+
+Correctness:  <font color="#199900">18/21 tests passed</font>
+Memory:       <font color="#009900">8/8 tests passed</font>
+Timing:       <font color="#009900">41/41 tests passed</font>
+
+Aggregate score: <font color="#0F9900">90.71%</font> [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]</pre><h2>
+
+
+Assessment Details
+</h2>
+<pre>The following files were submitted:
+----------------------------------
+total 16K
+-rw-r--r-- 1 7.5K Oct 26 17:21 KdTree.java
+-rw-r--r-- 1 1.9K Oct 26 17:21 PointSET.java
+-rw-r--r-- 1 2.7K Oct 26 17:21 studentSubmission.zip
+
+
+******************************************************************************
+*  compiling
+******************************************************************************
+
+
+% javac PointSET.java
+*-----------------------------------------------------------
+================================================================
+
+% javac KdTree.java
+*-----------------------------------------------------------
+================================================================
+
+
+
+% checkstyle *.java
+*-----------------------------------------------------------
+================================================================
+
+
+% findbugs *.class
+*-----------------------------------------------------------
+================================================================
+
+
+Testing the APIs of your programs.
+*-----------------------------------------------------------
+PointSET:
+
+KdTree:
+
+================================================================
+
+
+******************************************************************************
+*  correctness
+******************************************************************************
+
+Testing methods in PointSET
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Test 1: Test size() by inserting N random points
+        (size may be less than N because of duplicates)
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 2: Test isEmpty() by checking for N = 0, 1, and 2 points
+  *  zero points
+  *  one point
+  *  two points
+==&gt; passed
+
+Test 3: Insert N random points and check contains() for random query points
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 4: Insert N random points and check nearest() for random query points
+  *  3000 random points in 100000-by-100000 grid
+  *  3000 random points in 10000-by-10000 grid
+  *  3000 random points in 1000-by-1000 grid
+  *  3000 random points in 100-by-100 grid
+  *  3000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 5: Insert N random points and check range() for random query rectangles
+  *  1000 random rectangles and points in 100000-by-100000 grid
+  *  1000 random rectangles and points in 10000-by-10000 grid
+  *  1000 random rectangles and points in 1000-by-1000 grid
+  *  1000 random rectangles and points in 100-by-100 grid
+  *  1000 random rectangles and points in 10-by-10 grid
+==&gt; passed
+
+Test 6: Intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3, p4, p5, and p6, respectively
+  *  10000 calls in 10000-by-10000 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 100-by-100 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 10-by-10 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 1-by-1 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+==&gt; passed
+
+Test 7: Intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3=0, p4, p5, and p6, respectively
+        (data structure with 0 points)
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.5, 0.5, 0.0, 0.0, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.6, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.0, 0.6, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.0, 0.0, 0.6
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.2, 0.2, 0.2
+==&gt; passed
+
+Test 8: Test whether two PointSET objects can be created at the same time
+==&gt; passed
+
+
+Total: 8/8 tests passed!
+
+================================================================
+
+Testing methods in KdTree
+*-----------------------------------------------------------
+Running 13 total tests.
+
+Test 1a: Insert N distinct points and check size() after each insertion
+  *  100000 random distinct points in 100000-by-100000 grid
+  *  100000 random distinct points in 10000-by-10000 grid
+  *  100000 random distinct points in 1000-by-1000 grid
+  *  10000 random distinct points in 100-by-100 grid
+  *  100 random distinct points in 10-by-10 grid
+  *  1 random distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 1b: Insert N points and check size() after each insertion
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+  *  10 random points in 1-by-1 grid
+==&gt; passed
+
+Test 2: Test isEmpty() by checking that it returns the right results for 0, 1, and 2 points
+  *  zero points
+  *  one point
+  *  two points
+==&gt; passed
+
+Test 3a: Insert N distinct points and call contains() with random query points
+  *  100000 random distinct points in 100000-by-100000 grid
+  *  100000 random distinct points in 10000-by-10000 grid
+  *  100000 random distinct points in 1000-by-1000 grid
+  *  10000 random distinct points in 100-by-100 grid
+  *  100 random distinct points in 10-by-10 grid
+  *  1 random distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 3b: Insert N points and call contains() with random query points
+  *  10000 random points in 1000-by-1000 grid
+  *  10000 random points in 100-by-100 grid
+  *  10000 random points in 10-by-10 grid
+  *  10000 random points in 1-by-1 grid
+==&gt; passed
+
+Test 4: Test whether two KdTree objects can be created at the same time
+==&gt; passed
+
+Test 5a: Insert N distinct points and call range() for random query rectangles
+  *  4000 random rectangles and 4000 distinct points in 100000-by-100000 grid
+  *  4000 random rectangles and 4000 distinct points in 10000-by-10000 grid
+  *  4000 random rectangles and 4000 distinct points in 1000-by-1000 grid
+  *  4000 random rectangles and 4000 distinct points in 100-by-100 grid
+  *  4000 random rectangles and 4000 distinct points in 10-by-10 grid
+  *  4000 random rectangles and 4000 distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 5b: Insert N points and call range() for random query rectangles
+  *  4000 random rectangles and 4000 random points in 10000-by-10000 grid
+  *  4000 random rectangles and 4000 random points in 1000-by-1000 grid
+  *  4000 random rectangles and 4000 random points in 100-by-100 grid
+  *  4000 random rectangles and 4000 random points in 10-by-10 grid
+  *  4000 random rectangles and 4000 random points in 1-by-1 grid
+==&gt; passed
+
+Test 5c: Insert N points and call range() for tiny
+rectangles enclosing each point.
+  *  4000 tiny rectangles and 4000 points in 100000-by-100000 grid
+  *  4000 tiny rectangles and 4000 points in 10000-by-10000 grid
+  *  4000 tiny rectangles and 4000 points in 1000-by-1000 grid
+  *  4000 tiny rectangles and 4000 points in 100-by-100 grid
+  *  4000 tiny rectangles and 4000 points in 10-by-10 grid
+==&gt; passed
+
+Test 6a: Insert N distinct points and call nearest() with random query points
+  *  100000 random points in 100000-by-100000 grid
+      -  failed on trial 1 of 100000
+      -  student   nearest()    = (0.29358, 0.6763)
+      -  reference nearest()    = (0.2971, 0.67442)
+      -  student   distanceTo() = 0.0028715326917867308
+      -  reference distanceTo() = 0.0011289375536317062
+  *  100000 random points in 10000-by-10000 grid
+      -  failed on trial 3 of 100000
+      -  student   nearest()    = (0.173, 0.6662)
+      -  reference nearest()    = (0.1726, 0.6596)
+      -  student   distanceTo() = 0.005500909015790087
+      -  reference distanceTo() = 0.0012083045973594483
+  *  100000 random points in 1000-by-1000 grid
+      -  failed on trial 9 of 100000
+      -  student   nearest()    = (0.615, 0.494)
+      -  reference nearest()    = (0.606, 0.496)
+      -  student   distanceTo() = 0.007000000000000006
+      -  reference distanceTo() = 0.0028284271247461927
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 6b: Insert N points and call nearest() with random query points
+  *  10000 random points in 1000-by-1000 grid
+      -  failed on trial 2 of 10000
+      -  student   nearest()    = (0.565, 0.974)
+      -  reference nearest()    = (0.581, 0.97)
+      -  student   distanceTo() = 0.010000000000000009
+      -  reference distanceTo() = 0.007211102550927985
+  *  10000 random points in 100-by-100 grid
+      -  failed on trial 3 of 10000
+      -  student   nearest()    = (0.93, 0.97)
+      -  reference nearest()    = (0.92, 0.97)
+      -  student   distanceTo() = 0.014142135623730963
+      -  reference distanceTo() = 0.010000000000000009
+  *  10000 random points in 10-by-10 grid
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 7: test intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3, p4, p5, and p6, respectively
+  *  20000 calls in 100000-by-100000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 42 of 20000
+      -  student   nearest()    = (0.14464, 0.4818)
+      -  reference nearest()    = (0.45174, 0.27515)
+      -  student   distanceTo() = 0.2589840282720152
+      -  reference distanceTo() = 0.13347748274521812
+  *  20000 calls in 10000-by-10000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 57 of 20000
+      -  student   nearest()    = (0.4542, 0.8899)
+      -  reference nearest()    = (0.4678, 0.6923)
+      -  student   distanceTo() = 0.20852829544212945
+      -  reference distanceTo() = 0.11741639578866314
+  *  20000 calls in 1000-by-1000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 55 of 20000
+      -  student   nearest()    = (0.703, 0.729)
+      -  reference nearest()    = (0.961, 0.116)
+      -  student   distanceTo() = 0.45951822597150593
+      -  reference distanceTo() = 0.20854256160314133
+  *  20000 calls in 100-by-100 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 20 of 20000
+      -  student   nearest()    = (0.0, 0.96)
+      -  reference nearest()    = (0.26, 0.5)
+      -  student   distanceTo() = 0.6403124237432849
+      -  reference distanceTo() = 0.6122091146005587
+  *  20000 calls in 10-by-10 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 30 of 20000
+      -  student   nearest()    = (0.4, 0.8)
+      -  reference nearest()    = (1.0, 0.6)
+      -  student   distanceTo() = 0.4123105625617661
+      -  reference distanceTo() = 0.2236067977499789
+  *  20000 calls in 1-by-1 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 8: test intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3 = 0, p4, p5, and p6, respectively
+        (a data structure with 0 points)
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.5, 0.5, 0.0, 0.0, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.6, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.0, 0.6, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.0, 0.0, 0.6
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.2, 0.2, 0.2
+==&gt; passed
+
+
+Total: 10/13 tests passed!
+
+================================================================
+
+******************************************************************************
+*  memory usage
+******************************************************************************
+
+Computing memory of Point2D
+*-----------------------------------------------------------
+Memory of Point2D object = 32 bytes
+================================================================
+
+
+
+Computing memory of RectHV
+*-----------------------------------------------------------
+Memory of RectHV object = 48 bytes
+================================================================
+
+
+
+Computing memory of KdTree
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Memory usage of a KdTree with N points (including Point2D and RectHV objects).
+Maximum allowed memory is 312N + 192 bytes.
+
+                 N       student (bytes)    reference (bytes)
+--------------------------------------------------------------
+=&gt; passed        1          160                160
+=&gt; passed        2          288                288
+=&gt; passed        5          672                672
+=&gt; passed       10         1312               1312
+=&gt; passed       25         3232               3232
+=&gt; passed      100        12832              12832
+=&gt; passed      400        51232              51232
+=&gt; passed      800       102432             102432
+==&gt; 8/8 tests passed
+
+Total: 8/8 tests passed!
+
+Student   memory (bytes) = 128.00 N + 32.00  (R^2 = 1.000)
+Reference memory (bytes) = 128.00 N + 32.00  (R^2 = 1.000)
+================================================================
+
+
+
+******************************************************************************
+*  timing
+******************************************************************************
+
+Timing PointSET
+*-----------------------------------------------------------
+Running 13 total tests.
+
+
+Inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed   160000     531561         
+=&gt; passed   320000     423280         
+=&gt; passed   640000     271647         
+=&gt; passed  1280000     385194         
+==&gt; 4/4 tests passed
+
+Performing contains() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000     570342         
+=&gt; passed    20000     646552         
+=&gt; passed    40000     607287         
+==&gt; 3/3 tests passed
+
+Performing range() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000       2388         
+=&gt; passed    20000       1117         
+=&gt; passed    40000        509         
+==&gt; 3/3 tests passed
+
+Performing nearest() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000       2774         
+=&gt; passed    20000       1307         
+=&gt; passed    40000        582         
+==&gt; 3/3 tests passed
+
+Total: 13/13 tests passed!
+
+================================================================
+
+
+
+Timing KdTree
+*-----------------------------------------------------------
+Running 28 total tests.
+
+
+Inserting N points into a 2d tree. The table gives the average number of calls to methods
+in RectHV and Point per call to insert().
+
+                                                                                                Point2D
+               N      ops per second       RectHV()           x()               y()             equals()
+----------------------------------------------------------------------------------------------------------------
+=&gt; passed   160000     380048               1.0              22.6              21.6              31.8         
+=&gt; passed   320000     405577               1.0              23.0              22.0              32.9         
+=&gt; passed   640000     379372               1.0              24.5              23.5              35.7         
+=&gt; passed  1280000     319043               1.0              26.6              25.6              37.9         
+==&gt; 4/4 tests passed
+
+Performing contains() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to contain().
+
+                                                                               Point2D
+               N      ops per second       x()               y()               equals()
+-----------------------------------------------------------------------------------------------
+=&gt; passed    10000     563910              18.5              17.5               9.2         
+=&gt; passed    20000     588235              19.7              18.7               8.7         
+=&gt; passed    40000     520833              21.8              20.8              10.4         
+=&gt; passed    80000     212465              22.0              21.0              10.3         
+=&gt; passed   160000     370370              23.2              22.2              11.7         
+=&gt; passed   320000     365854              25.0              24.0              11.9         
+=&gt; passed   640000     301205              25.7              24.7              12.7         
+=&gt; passed  1280000     255973              27.2              26.2              13.0         
+==&gt; 8/8 tests passed
+
+Performing range() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to range().
+
+               N      ops per second       intersects()      contains()        x()               y()
+---------------------------------------------------------------------------------------------------------------
+=&gt; passed    10000     166297              50.4              31.1              50.1              12.1         
+=&gt; passed    20000     298211              52.7              32.6              53.3              16.2         
+=&gt; passed    40000     263158              64.9              39.3              63.1              14.1         
+=&gt; passed    80000     274725              67.1              40.7              65.2              14.9         
+=&gt; passed   160000     192802              70.0              42.5              70.9              20.4         
+=&gt; passed   320000     167973              67.0              40.2              65.2              15.7         
+=&gt; passed   640000     162162              72.0              43.3              70.7              19.2         
+=&gt; passed  1280000     122649              78.7              47.0              74.8              14.2         
+==&gt; 8/8 tests passed
+
+Performing nearest() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to nearest().
+
+                                         Point2D                 RectHV
+               N      ops per second     distanceSquaredTo()     distanceSquaredTo()        x()               y()
+------------------------------------------------------------------------------------------------------------------------
+=&gt; passed    10000   465839                  33.0                    0.0                    58.2              43.5         
+=&gt; passed    20000   482315                  36.4                    0.0                    64.3              48.3         
+=&gt; passed    40000   394737                  42.4                    0.0                    76.6              56.3         
+=&gt; passed    80000   418994                  43.9                    0.0                    77.8              59.0         
+=&gt; passed   160000   326797                  47.5                    0.0                    85.7              64.2         
+=&gt; passed   320000   155119                  50.1                    0.0                    90.5              67.1         
+=&gt; passed   640000    83011                  51.2                    0.0                    91.9              68.8         
+=&gt; passed  1280000   230061                  57.6                    0.0                   104.1              76.9         
+==&gt; 8/8 tests passed
+
+Total: 28/28 tests passed!
+
+================================================================
+
+
+
+</pre> </td></tr>
+    </tbody>
+</table>
+
+
+<table class="table table-condensed table-bordered table-striped">
+    <thead>
+        <tr>
+            <th colspan="3">Submission</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Submission time</td><td>Sun-26-Oct 10:06:05</td></tr>
+        <tr><td>Raw Score</td><td>78.33 / 100.00</td></tr>
+                <tr><td>Feedback</td><td>See the <a href="https://class.coursera.org/algs4partI-006/wiki/view?page=Assessments">Assessment Guide</a> for information on how to read this report. <h2>
+Assessment Summary</h2>
+<pre>Compilation:  <font color="#009900">PASSED</font>
+Style:        <font color="#009900">PASSED</font>
+Findbugs:     <font color="#009900">No potential bugs found.</font>
+API:          <font color="#009900">PASSED</font>
+
+Correctness:  <font color="#4C9900">14/21 tests passed</font>
+Memory:       <font color="#009900">8/8 tests passed</font>
+Timing:       <font color="#009900">41/41 tests passed</font>
+
+Aggregate score: <font color="#2A9900">78.33%</font> [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]</pre><h2>
+
+
+Assessment Details
+</h2>
+<pre>The following files were submitted:
+----------------------------------
+total 16K
+-rw-r--r-- 1 7.5K Oct 26 17:01 KdTree.java
+-rw-r--r-- 1 1.9K Oct 26 17:01 PointSET.java
+-rw-r--r-- 1 2.7K Oct 26 17:01 studentSubmission.zip
+
+
+******************************************************************************
+*  compiling
+******************************************************************************
+
+
+% javac PointSET.java
+*-----------------------------------------------------------
+================================================================
+
+% javac KdTree.java
+*-----------------------------------------------------------
+================================================================
+
+
+
+% checkstyle *.java
+*-----------------------------------------------------------
+================================================================
+
+
+% findbugs *.class
+*-----------------------------------------------------------
+================================================================
+
+
+Testing the APIs of your programs.
+*-----------------------------------------------------------
+PointSET:
+
+KdTree:
+
+================================================================
+
+
+******************************************************************************
+*  correctness
+******************************************************************************
+
+Testing methods in PointSET
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Test 1: Test size() by inserting N random points
+        (size may be less than N because of duplicates)
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 2: Test isEmpty() by checking for N = 0, 1, and 2 points
+  *  zero points
+  *  one point
+  *  two points
+==&gt; passed
+
+Test 3: Insert N random points and check contains() for random query points
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 4: Insert N random points and check nearest() for random query points
+  *  3000 random points in 100000-by-100000 grid
+  *  3000 random points in 10000-by-10000 grid
+  *  3000 random points in 1000-by-1000 grid
+  *  3000 random points in 100-by-100 grid
+  *  3000 random points in 10-by-10 grid
+==&gt; passed
+
+Test 5: Insert N random points and check range() for random query rectangles
+  *  1000 random rectangles and points in 100000-by-100000 grid
+  *  1000 random rectangles and points in 10000-by-10000 grid
+  *  1000 random rectangles and points in 1000-by-1000 grid
+  *  1000 random rectangles and points in 100-by-100 grid
+  *  1000 random rectangles and points in 10-by-10 grid
+==&gt; passed
+
+Test 6: Intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3, p4, p5, and p6, respectively
+  *  10000 calls in 10000-by-10000 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 100-by-100 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 10-by-10 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+  *  10000 calls in 1-by-1 grid with random points
+     and probabilities 0.05, 0.05, 0.3, 0.2, 0.2, 0.2
+==&gt; passed
+
+Test 7: Intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3=0, p4, p5, and p6, respectively
+        (data structure with 0 points)
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.5, 0.5, 0.0, 0.0, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.6, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.0, 0.6, 0.0
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.0, 0.0, 0.6
+  *  1000 calls in 1000-by-1000 grid with random points
+     and probabilities 0.2, 0.2, 0.0, 0.2, 0.2, 0.2
+==&gt; passed
+
+Test 8: Test whether two PointSET objects can be created at the same time
+==&gt; passed
+
+
+Total: 8/8 tests passed!
+
+================================================================
+
+Testing methods in KdTree
+*-----------------------------------------------------------
+Running 13 total tests.
+
+Test 1a: Insert N distinct points and check size() after each insertion
+  *  100000 random distinct points in 100000-by-100000 grid
+  *  100000 random distinct points in 10000-by-10000 grid
+  *  100000 random distinct points in 1000-by-1000 grid
+  *  10000 random distinct points in 100-by-100 grid
+  *  100 random distinct points in 10-by-10 grid
+  *  1 random distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 1b: Insert N points and check size() after each insertion
+  *  100000 random points in 100000-by-100000 grid
+  *  100000 random points in 10000-by-10000 grid
+  *  100000 random points in 1000-by-1000 grid
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+  *  10 random points in 1-by-1 grid
+==&gt; passed
+
+Test 2: Test isEmpty() by checking that it returns the right results for 0, 1, and 2 points
+  *  zero points
+  *  one point
+  *  two points
+==&gt; passed
+
+Test 3a: Insert N distinct points and call contains() with random query points
+  *  100000 random distinct points in 100000-by-100000 grid
+  *  100000 random distinct points in 10000-by-10000 grid
+      -  failed on trial 2095 of 100000
+      -  student   contains() = false
+      -  reference contains() = true
+  *  100000 random distinct points in 1000-by-1000 grid
+      -  failed on trial 5 of 100000
+      -  student   contains() = false
+      -  reference contains() = true
+  *  10000 random distinct points in 100-by-100 grid
+      -  failed on trial 1 of 10000
+      -  student   contains() = false
+      -  reference contains() = true
+  *  100 random distinct points in 10-by-10 grid
+      -  failed on trial 1 of 100
+      -  student   contains() = false
+      -  reference contains() = true
+  *  1 random distinct points in 1-by-1 grid
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 3b: Insert N points and call contains() with random query points
+  *  10000 random points in 1000-by-1000 grid
+      -  failed on trial 128 of 10000
+      -  student   contains() = false
+      -  reference contains() = true
+  *  10000 random points in 100-by-100 grid
+      -  failed on trial 3 of 10000
+      -  student   contains() = false
+      -  reference contains() = true
+  *  10000 random points in 10-by-10 grid
+      -  failed on trial 1 of 10000
+      -  student   contains() = false
+      -  reference contains() = true
+  *  10000 random points in 1-by-1 grid
+      -  failed on trial 1 of 10000
+      -  student   contains() = false
+      -  reference contains() = true
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 4: Test whether two KdTree objects can be created at the same time
+    - contains() give wrong answer
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 5a: Insert N distinct points and call range() for random query rectangles
+  *  4000 random rectangles and 4000 distinct points in 100000-by-100000 grid
+  *  4000 random rectangles and 4000 distinct points in 10000-by-10000 grid
+  *  4000 random rectangles and 4000 distinct points in 1000-by-1000 grid
+  *  4000 random rectangles and 4000 distinct points in 100-by-100 grid
+  *  4000 random rectangles and 4000 distinct points in 10-by-10 grid
+  *  4000 random rectangles and 4000 distinct points in 1-by-1 grid
+==&gt; passed
+
+Test 5b: Insert N points and call range() for random query rectangles
+  *  4000 random rectangles and 4000 random points in 10000-by-10000 grid
+  *  4000 random rectangles and 4000 random points in 1000-by-1000 grid
+  *  4000 random rectangles and 4000 random points in 100-by-100 grid
+  *  4000 random rectangles and 4000 random points in 10-by-10 grid
+  *  4000 random rectangles and 4000 random points in 1-by-1 grid
+==&gt; passed
+
+Test 5c: Insert N points and call range() for tiny
+rectangles enclosing each point.
+  *  4000 tiny rectangles and 4000 points in 100000-by-100000 grid
+  *  4000 tiny rectangles and 4000 points in 10000-by-10000 grid
+  *  4000 tiny rectangles and 4000 points in 1000-by-1000 grid
+  *  4000 tiny rectangles and 4000 points in 100-by-100 grid
+  *  4000 tiny rectangles and 4000 points in 10-by-10 grid
+==&gt; passed
+
+Test 6a: Insert N distinct points and call nearest() with random query points
+  *  100000 random points in 100000-by-100000 grid
+      -  failed on trial 3 of 100000
+      -  student   nearest()    = (0.59687, 0.24774)
+      -  reference nearest()    = (0.5949, 0.24698)
+      -  student   distanceTo() = 0.0027617566873278125
+      -  reference distanceTo() = 0.0019501794789198626
+  *  100000 random points in 10000-by-10000 grid
+      -  failed on trial 5 of 100000
+      -  student   nearest()    = (0.7316, 0.1485)
+      -  reference nearest()    = (0.7274, 0.1526)
+      -  student   distanceTo() = 0.003360059523282296
+      -  reference distanceTo() = 0.002607680962081049
+  *  100000 random points in 1000-by-1000 grid
+      -  failed on trial 15 of 100000
+      -  student   nearest()    = (0.448, 0.169)
+      -  reference nearest()    = (0.45, 0.161)
+      -  student   distanceTo() = 0.00509901951359279
+      -  reference distanceTo() = 0.004242640687119289
+  *  100000 random points in 100-by-100 grid
+  *  100000 random points in 10-by-10 grid
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 6b: Insert N points and call nearest() with random query points
+  *  10000 random points in 1000-by-1000 grid
+      -  failed on trial 9 of 10000
+      -  student   nearest()    = (0.079, 0.221)
+      -  reference nearest()    = (0.069, 0.234)
+      -  student   distanceTo() = 0.0098488578017961
+      -  reference distanceTo() = 0.009055385138137424
+  *  10000 random points in 100-by-100 grid
+      -  failed on trial 27 of 10000
+      -  student   nearest()    = (0.33, 0.15)
+      -  reference nearest()    = (0.33, 0.14)
+      -  student   distanceTo() = 0.014142135623730944
+      -  reference distanceTo() = 0.010000000000000009
+  *  10000 random points in 10-by-10 grid
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 7: test intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3, p4, p5, and p6, respectively
+  *  20000 calls in 100000-by-100000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 30 of 20000
+      -  student   nearest()    = (0.51897, 0.77225)
+      -  reference nearest()    = (0.60204, 0.89224)
+      -  student   distanceTo() = 0.22222381915537318
+      -  reference distanceTo() = 0.19696903411450234
+  *  20000 calls in 10000-by-10000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 67 of 20000
+      -  student   nearest()    = (0.785, 0.4443)
+      -  reference nearest()    = (0.9768, 0.6032)
+      -  student   distanceTo() = 0.27696284949429595
+      -  reference distanceTo() = 0.11058087538087229
+  *  20000 calls in 1000-by-1000 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 38 of 20000
+      -  student   nearest()    = (0.735, 0.777)
+      -  reference nearest()    = (0.69, 0.107)
+      -  student   distanceTo() = 0.6708621318870219
+      -  reference distanceTo() = 0.07900000000000007
+  *  20000 calls in 100-by-100 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 28 of 20000
+      -  student   nearest()    = (0.06, 0.2)
+      -  reference nearest()    = (0.51, 0.07)
+      -  student   distanceTo() = 0.34058772731852804
+      -  reference distanceTo() = 0.18601075237738274
+  *  20000 calls in 10-by-10 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 12 of 20000
+      -  student   nearest()    = (0.6, 0.7)
+      -  reference nearest()    = (0.7, 0.7)
+      -  student   distanceTo() = 0.2236067977499789
+      -  reference distanceTo() = 0.19999999999999996
+  *  20000 calls in 1-by-1 grid with probabilties 0.05, 0.05, 0.3, 0.1, 0.2, 0.2
+      -  failed on trial 18 of 20000
+      -  student   contains() = false
+      -  reference contains() = true
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 8: test intermixed sequence of calls to isEmpty(), size(), insert(),
+        contains(), range(), and nearest() with probabilities
+        p1, p2, p3 = 0, p4, p5, and p6, respectively
+        (a data structure with 0 points)
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.5, 0.5, 0.0, 0.0, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.6, 0.0, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.0, 0.6, 0.0
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.0, 0.0, 0.6
+     java.lang.NullPointerException
+     KdTree$Node.access$000(KdTree.java:113)
+     KdTree.nearest(KdTree.java:95)
+     TestKdTree.testAll(TestKdTree.java:630)
+     TestKdTree.test8(TestKdTree.java:689)
+     TestKdTree.main(TestKdTree.java:721)
+
+  *  1000 calls in 1000-by-1000 grid with probabilties 0.2, 0.2, 0.0, 0.2, 0.2, 0.2
+     java.lang.NullPointerException
+     KdTree$Node.access$000(KdTree.java:113)
+     KdTree.nearest(KdTree.java:95)
+     TestKdTree.testAll(TestKdTree.java:630)
+     TestKdTree.test8(TestKdTree.java:690)
+     TestKdTree.main(TestKdTree.java:721)
+
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+
+Total: 6/13 tests passed!
+
+================================================================
+
+******************************************************************************
+*  memory usage
+******************************************************************************
+
+Computing memory of Point2D
+*-----------------------------------------------------------
+Memory of Point2D object = 32 bytes
+================================================================
+
+
+
+Computing memory of RectHV
+*-----------------------------------------------------------
+Memory of RectHV object = 48 bytes
+================================================================
+
+
+
+Computing memory of KdTree
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Memory usage of a KdTree with N points (including Point2D and RectHV objects).
+Maximum allowed memory is 312N + 192 bytes.
+
+                 N       student (bytes)    reference (bytes)
+--------------------------------------------------------------
+=&gt; passed        1          160                160
+=&gt; passed        2          288                288
+=&gt; passed        5          672                672
+=&gt; passed       10         1312               1312
+=&gt; passed       25         3232               3232
+=&gt; passed      100        12832              12832
+=&gt; passed      400        51232              51232
+=&gt; passed      800       102432             102432
+==&gt; 8/8 tests passed
+
+Total: 8/8 tests passed!
+
+Student   memory (bytes) = 128.00 N + 32.00  (R^2 = 1.000)
+Reference memory (bytes) = 128.00 N + 32.00  (R^2 = 1.000)
+================================================================
+
+
+
+******************************************************************************
+*  timing
+******************************************************************************
+
+Timing PointSET
+*-----------------------------------------------------------
+Running 13 total tests.
+
+
+Inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed   160000     740741         
+=&gt; passed   320000     659794         
+=&gt; passed   640000     491174         
+=&gt; passed  1280000     443520         
+==&gt; 4/4 tests passed
+
+Performing contains() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000     847458         
+=&gt; passed    20000     852273         
+=&gt; passed    40000     735294         
+==&gt; 3/3 tests passed
+
+Performing range() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000       2508         
+=&gt; passed    20000       1077         
+=&gt; passed    40000        308         
+==&gt; 3/3 tests passed
+
+Performing nearest() queries after inserting N points into a PointSET.
+
+               N      ops per second
+----------------------------------------
+=&gt; passed    10000       2824         
+=&gt; passed    20000       1322         
+=&gt; passed    40000        460         
+==&gt; 3/3 tests passed
+
+Total: 13/13 tests passed!
+
+================================================================
+
+
+
+Timing KdTree
+*-----------------------------------------------------------
+Running 28 total tests.
+
+
+Inserting N points into a 2d tree. The table gives the average number of calls to methods
+in RectHV and Point per call to insert().
+
+                                                                                                Point2D
+               N      ops per second       RectHV()           x()               y()             equals()
+----------------------------------------------------------------------------------------------------------------
+=&gt; passed   160000     524590               1.0              22.6              21.6              31.8         
+=&gt; passed   320000     472674               1.0              23.0              22.0              32.9         
+=&gt; passed   640000     295067               1.0              24.5              23.5              35.7         
+=&gt; passed  1280000     294388               1.0              26.6              25.6              37.9         
+==&gt; 4/4 tests passed
+
+Performing contains() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to contain().
+
+                                                                               Point2D
+               N      ops per second       x()               y()               equals()
+-----------------------------------------------------------------------------------------------
+=&gt; passed    10000    1071429               4.7               2.7               1.0         
+=&gt; passed    20000    1153846               8.8               6.9               5.2         
+=&gt; passed    40000    1162791              10.2               8.2               4.3         
+=&gt; passed    80000    1145038              10.2               8.5               5.1         
+=&gt; passed   160000    1136364              11.6              10.3               4.7         
+=&gt; passed   320000    1094891              12.6              11.3               6.7         
+=&gt; passed   640000    1102941               9.8               9.2               5.3         
+=&gt; passed  1280000    1079137              15.6              14.6               9.4         
+==&gt; 8/8 tests passed
+
+Performing range() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to range().
+
+               N      ops per second       intersects()      contains()        x()               y()
+---------------------------------------------------------------------------------------------------------------
+=&gt; passed    10000     377834              50.4              31.1              50.1              12.1         
+=&gt; passed    20000     357143              52.7              32.6              53.3              16.2         
+=&gt; passed    40000     290698              64.9              39.3              63.1              14.1         
+=&gt; passed    80000     208333              67.1              40.7              65.2              14.9         
+=&gt; passed   160000     158061              70.0              42.5              70.9              20.4         
+=&gt; passed   320000     136240              67.0              40.2              65.2              15.7         
+=&gt; passed   640000     114679              72.0              43.3              70.7              19.2         
+=&gt; passed  1280000     118297              78.7              47.0              74.8              14.2         
+==&gt; 8/8 tests passed
+
+Performing nearest() queries after inserting N points into a 2d tree. The table gives
+the average number of calls to methods in RectHV and Point per call to nearest().
+
+                                         Point2D                 RectHV
+               N      ops per second     distanceSquaredTo()     distanceSquaredTo()        x()               y()
+------------------------------------------------------------------------------------------------------------------------
+=&gt; passed    10000   579151                  33.0                    0.0                    58.2              43.5         
+=&gt; passed    20000   574713                  36.4                    0.0                    64.3              48.3         
+=&gt; passed    40000   454545                  42.4                    0.0                    76.6              56.3         
+=&gt; passed    80000   385604                  43.9                    0.0                    77.8              59.0         
+=&gt; passed   160000   340909                  47.5                    0.0                    85.7              64.2         
+=&gt; passed   320000   279330                  50.1                    0.0                    90.5              67.1         
+=&gt; passed   640000   286260                  51.2                    0.0                    91.9              68.8         
+=&gt; passed  1280000   195822                  57.6                    0.0                   104.1              76.9         
+==&gt; 8/8 tests passed
+
+Total: 28/28 tests passed!
+
+================================================================
+
+
+
+</pre> </td></tr>
+    </tbody>
+</table>
+
+
+<table class="table table-condensed table-bordered table-striped">
+    <thead>
+        <tr>
+            <th colspan="3">Submission</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Submission time</td><td>Sun-26-Oct 09:56:45</td></tr>
+        <tr><td>Raw Score</td><td>0.00 / 100.00</td></tr>
+                <tr><td>Feedback</td><td><pre>Compilation:  <font color="#009900">PASSED</font>
+
+API:          <font color="#990000">FAILED</font>
+<pre>KdTree:<p>
+
+The following methods should be removed or made private:
+  *  public Point2D get(Point2D,boolean)
+  *  public void put(Point2D,boolean)
+
+
+</p></pre></pre> </td></tr>
+    </tbody>
+</table>
+
+</div></div></div></div></div><div class="coursera-footer"></div></div></div></div><!--[if gte IE 8]><script>document.getElementById("coursera-loading-js").style.display = 'block';</script><![endif]-->
+<!--[if lte IE 7]><script>document.getElementById("coursera-loading-nojs").style.display = 'block';
+window._204 = window._204 || [];
+window._gaq = window._gaq || [];
+
+window._gaq.push(
+    ['_setAccount', 'UA-28377374-1'],
+    ['_setDomainName', window.location.hostname],
+    ['_setAllowLinker', true],
+    ['_trackPageview', window.location.pathname]);
+    
+window._204.push(
+  ['client', 'home'],
+  {key:"pageview", value:window.location.pathname});
+  </script><script src="https://dw0ugk4msqulk.cloudfront.net/781d2c0a59d16ec4b57f71c24c16869b50643a93/js/lib/204.js"></script><script src="https://ssl.google-analytics.com/ga.js"></script><![endif]-->
+<!--[if !IE]> --><script>document.getElementById("coursera-loading-js").style.display = 'block';</script><!-- <![endif]-->
+<script src="Assignment%20Results%20_%20Coursera_files/require.js"></script><script data-baseurl="https://dw0ugk4msqulk.cloudfront.net/781d2c0a59d16ec4b57f71c24c16869b50643a93/" data-version="781d2c0a59d16ec4b57f71c24c16869b50643a93" data-timestamp="1414185469949" data-debug="0" data-locale="en_US" id="_require">if(document.getElementById("coursera-loading-js").style.display == 'block') {
+  (function(el) {
+     require.config({
+       //enforceDefine: true,
+       waitSeconds: 75,
+       baseUrl: el.getAttribute("data-baseurl"),
+       urlArgs: el.getAttribute("data-debug") == "1" ? "v=" + el.getAttribute("data-timestamp") : "",
+       shim: {
+          'underscore': {
+             exports: '_'
+          },
+          'backbone': {
+             deps: ['underscore', 'jquery'],
+             exports: 'Backbone',
+             init: function(_, $) {
+               Backbone.$ = $;
+               return Backbone;
+             }
+          },
+          'pages/hg/thirdparty/js/backbone.marionette': {
+            deps: ["backbone"]
+          },
+          'pages/hg/thirdparty/js/webshims/polyfiller': {
+            deps: ["jquery"]
+          },
+          'pages/hg/thirdparty/js/webshims/extras/mousepress': {
+            deps: ["jquery", "pages/hg/thirdparty/js/webshims/polyfiller"]
+          },
+          'pages/hg/thirdparty/js/jquery.throttle': {
+            deps: ["jquery"]
+          },
+          'js/lib/jquery.linkify': {
+            deps: ["jquery"]
+          },
+          'pages/hg/thirdparty/js/js/bootstrap/alert': {
+            deps: ["jquery", "pages/hg/thirdparty/js/bootstrap/transition"]
+          },
+          'spark/core/js/jquery_ui': {
+            deps: ["jquery"]
+          },
+          'spark/core/js/jquery.history': {
+            deps: ["jquery"]
+          },
+          'js/lib/bootstrap.tooltip': {
+            deps: ["jquery"]
+          },
+          'pages/hg/thirdparty/js/bootstrap/transition': {
+            deps: ["jquery"]
+          },
+          'pages/hg/thirdparty/js/bootstrap/tab': {
+            deps: ["jquery"]
+          },
+          'bundles/videojs/lib/video.4.3.0': {
+            exports: 'vjs'
+          }
+       },
+       paths: {
+          "jquery":                         "pages/spark/jquery",
+          "underscore":                     "js/core/underscore.1.5.2",
+          "backbone":                       "js/core/backbone.1.1.0",
+          "backbone.relational":            "js/lib/backbone.relational.0.8.6",
+          "i18n":                           "js/lib/i18n._t",
+          "css":                            "js/vendor/require.css.v0-1-2",
+          "memoize":                        "js/lib/require.memoize.v0-0-1",
+          "pages/spark/models/user.json":   "empty:",
+          "pages/spark/models/course.json": "empty:",
+          "pages/spark/models/navbar.json": "empty:"
+       },
+       callback: function() {
+                    require(["pages/spark/routes"]);
+                },
+       config: {
+         i18n: {
+           locale: (window.localStorage ? localStorage.getItem('locale') : '') || el.getAttribute('data-locale')
+         }
+       }
+     });
+  })(document.getElementById("_require"));
+}
+</script><script>define("pages/spark/models/user.json", [], function(){
+      return JSON.parse("{\"id\":1350958,\"email_address\":\"sudarshan.sarolkar@gmail.com\",\"full_name\":\"Sudarshan S\",\"locale\":\"en_US\",\"timezone\":\"America\\\/Los_Angeles\",\"access_group_id\":\"4\",\"registration_time\":\"1410627231\",\"last_access_time\":\"1414014655\",\"last_access_ip\":\"204.14.239.17\",\"signature_track_register_time\":\"0\",\"email_announcement\":\"1\",\"email_forum\":\"1\",\"in_signature_track\":\"0\",\"wishes_proctored_exam\":\"0\",\"first_name\":\"Sudarshan\",\"permissions\":[\"default\",\"allow_site_access\"],\"group\":\"Student\",\"anonymous\":false,\"forum_title\":\"Student\",\"signature_track_state\":1,\"verified_quizzes\":[],\"submitted_quizzes\":[],\"scheduled_proctored_exam\":null,\"last_chance_modal\":null,\"flexjoin_last_chance_modal\":null}");
+  });
+define("pages/spark/models/course.json", [], function(){
+      return JSON.parse("{\"id\":972715,\"isPrivate\":false,\"type\":\"public\",\"name\":\"Algorithms, Part I\",\"instructor\":\"Kevin Wayne, Robert Sedgewick\",\"sessionName\":\"algs4partI-006\",\"externalBaseURL\":\"https:\\\/\\\/www.coursera.org\\\/\",\"shortname\":\"algs4partI\",\"host\":\"https:\\\/\\\/www.coursera.org\\\/\",\"assetUnversionedLink\":\"https:\\\/\\\/dw0ugk4msqulk.cloudfront.net\\\/\",\"cheggID\":\"\",\"hasLTI\":true,\"badgevilleDomain\":\"\",\"linkable\":false,\"universityShortname\":\"princeton\",\"signatureTrackStatus\":{\"signature_track_enabled\":0},\"courseURLs\":{\"log_in_link\":\"https:\\\/\\\/accounts.coursera.org\\\/signin?post_redirect=https%3A%2F%2Faccounts.coursera.org%2Fsignin%3Fuser_action%3Dclass%26course_id%3D972715%26post_redirect%3Dhttps%253A%252F%252Fclass.coursera.org%252Falgs4partI-006%252Fauth%252Fauth_redirector%253Ftype%253Dlogin%2526subtype%253Dnormal%2526visiting%253D\",\"sign_up_link\":\"https:\\\/\\\/accounts.coursera.org\\\/signup?enroll_cid=972715&enroll_sn=algs4partI&enroll_n=Algorithms, Part I\",\"view_course_info_link\":\"https:\\\/\\\/www.coursera.org\\\/course\\\/algs4partI\",\"sign_up_link_cant_enroll\":\"https:\\\/\\\/accounts.coursera.org\\\/signup?post_redirect=https%3A%2F%2Fwww.coursera.org%2Fcourse%2Falgs4partI\"},\"courseBase\":\"https:\\\/\\\/class.coursera.org\\\/algs4partI-006\\\/\",\"search\":true,\"hideWiki\":true,\"hideMeetup\":false,\"aceStartRegistrationDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceEndRegistrationDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceExamStartDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceExamEndDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceExamRules\":\"\",\"aceExamDuration\":\"\",\"aceBeforeExam\":false,\"aceAfterExam\":true,\"aceHours\":null,\"aceCreditType\":\"\",\"acePrice\":null,\"aceExamID\":null,\"aceEligible\":false,\"canRegisterForACE\":false,\"specialization\":null,\"supportForums\":true,\"textbooks\":\"\",\"inVideoQuizV2\":false,\"in_flexjoin\":0,\"honorCodeExtraText\":\"I will not to post solutions or partial solutions to the programming assignments publicly (e.g., in the discussion forums or in public code repositories such as GitHub).\",\"honorCodeCustomTitle\":\"\",\"honorCodeCustomButton\":\"\",\"studentAccessDisabled\":0,\"disableQQs\":false}");
+  });
+  define("pages/spark/models/navbar.json", [], function(){
+      return JSON.parse("{\"items\":[{\"name\":\"Home\",\"icon\":\"home\",\"link_type\":\"circuit\",\"link_data\":\"class:index\"},{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"Syllabus\",\"icon\":\"wiki\",\"link_type\":\"circuit\",\"link_data\":\"wiki\\\/view?page=syllabus\"},{\"name\":\"Schedule\",\"icon\":\"wiki\",\"link_type\":\"circuit\",\"link_data\":\"wiki\\\/view?page=schedule\"},{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"Lectures\",\"icon\":\"lecture\",\"link_type\":\"circuit\",\"link_data\":\"lecture:index\"},{\"name\":\"Exercises\",\"icon\":\"quiz\",\"link_type\":\"circuit\",\"link_data\":\"quiz:index\"},{\"name\":\"Programming Assignments\",\"icon\":\"assignment\",\"link_type\":\"circuit\",\"link_data\":\"assignment:index\"},{\"name\":\"Job Interview Questions\",\"icon\":\"quiz\",\"link_type\":\"circuit\",\"link_data\":\"quiz:index?quiz_type=homework\"},{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"Discussion Forums\",\"icon\":\"forum\",\"link_type\":\"circuit\",\"link_data\":\"forum:index\"},{\"name\":\"Google+ Hangouts\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"wiki\\\/view?page=ScheduleGoogleHangouts\"},{\"name\":\"Errata\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"wiki\\\/view?page=errata\"},{\"name\":\"Surveys\",\"icon\":\"quiz\",\"link_type\":\"circuit\",\"link_data\":\"quiz:index?quiz_type=survey\"},{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"Booksite\",\"icon\":\"wiki\",\"link_type\":\"window_link\",\"link_data\":\"http:\\\/\\\/algs4.cs.princeton.edu\"}]}");
+  });
+</script><script>var coursera_enable_new_help_center = false;
+</script><div class="hide confirm-navigation modal"><div class="modal-header"><h3>Confirm Navigation</h3></div><div class="modal-body"><div class="confirm-navigation-message"></div><div>Are you sure you want to leave this page?</div></div><div class="modal-footer"><button data-modal-close="data-modal-close" class="btn confirm-navigation-stay">Stay on this Page</button><button data-modal-close="data-modal-close" class="btn btn-danger confirm-navigation-leave">Leave this Page</button></div></div><div style="display: none;" class="coursera-async-message"></div></body></html>

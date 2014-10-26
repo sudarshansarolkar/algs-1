@@ -99,11 +99,20 @@ public class KdTree {
     }
 
     private void nearest(Node n, Point2D p, Point2D[] res) {
-        if (n == null || !expore(n, p, res))
+        if (n == null)
             return;
 
-        if (res[0] == null
-                || n.p.distanceSquaredTo(p) < res[0].distanceSquaredTo(p)) {
+        double dis = 0;
+        if (res[0] != null)
+            dis = res[0].distanceSquaredTo(p);
+        //if (!n.rect.contains(p)) {
+            double dis2 = n.rect.distanceSquaredTo(p);
+
+            if (dis2 >= dis)
+                return;
+        //}
+
+        if (res[0] == null || n.p.distanceSquaredTo(p) < dis) {
             res[0] = n.p;
         }
         nearest(n.lb, p, res);
@@ -111,22 +120,20 @@ public class KdTree {
 
     }
 
-    private boolean expore(Node n, Point2D p, Point2D[] res) {
+    /*private boolean expore(Node n, Point2D p, Point2D[] res) {
         if (res[0] == null)
             return true;
         if (n.rect.contains(p))
             return true;
-
+        double dis2 = n.rect.distanceSquaredTo(p);
         double dis = res[0].distanceSquaredTo(p);
         // find x distance
         // perpendicular distance to rectangle
-        Point2D p2 = new Point2D(n.rect.xmin(), p.y());
-        double dis2 = p2.distanceSquaredTo(p);
         if (dis2 < dis)
             return true;
 
         return false;
-    }
+    }*/
 
     private static class Node {
         private Point2D p; // the point
