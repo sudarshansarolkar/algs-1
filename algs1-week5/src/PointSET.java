@@ -39,13 +39,13 @@ public class PointSET {
             p.draw();
     }
 
-    public Iterable<Point2D> range(RectHV rect) // all points that are inside
+    public Iterable<Point2D> range(RectHV r) // all points that are inside
                                                 // the rectangle
     {
         Queue<Point2D> q = new Queue<Point2D>();
         for (Point2D p : this.rect) {
-            if (p.x() <= rect.xmax() && p.x() >= rect.xmin()
-                    && p.y() <= rect.ymax() && p.y() >= rect.ymin()) {
+            if (p.x() <= r.xmax() && p.x() >= r.xmin()
+                    && p.y() <= r.ymax() && p.y() >= r.ymin()) {
                 q.enqueue(p);
             }
         }

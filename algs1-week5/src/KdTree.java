@@ -91,23 +91,41 @@ public class KdTree {
     public Point2D nearest(Point2D p) // a nearest neighbor in the set to point
                                       // p; null if the set is empty
     {
-        Point2D n2[] = new Point2D[1];
-        n2[0] = root.p;
+        Point2D[] n2 = new Point2D[1];
+        if (root != null)
+            n2[0] = root.p;
         nearest(root, p, n2);
         return n2[0];
     }
 
     private void nearest(Node n, Point2D p, Point2D[] res) {
-        if (n == null || !n.rect.contains(p))
+        if (n == null || !expore(n, p, res))
             return;
 
         if (res[0] == null
-                || (n.p.distanceSquaredTo(p) < res[0].distanceSquaredTo(p))) {
+                || n.p.distanceSquaredTo(p) < res[0].distanceSquaredTo(p)) {
             res[0] = n.p;
         }
         nearest(n.lb, p, res);
         nearest(n.rt, p, res);
 
+    }
+
+    private boolean expore(Node n, Point2D p, Point2D[] res) {
+        if (res[0] == null)
+            return true;
+        if (n.rect.contains(p))
+            return true;
+
+        double dis = res[0].distanceSquaredTo(p);
+        // find x distance
+        // perpendicular distance to rectangle
+        Point2D p2 = new Point2D(n.rect.xmin(), p.y());
+        double dis2 = p2.distanceSquaredTo(p);
+        if (dis2 < dis)
+            return true;
+
+        return false;
     }
 
     private static class Node {
@@ -122,7 +140,7 @@ public class KdTree {
         }
     }
 
-    public Point2D get(Point2D p, boolean flag) {
+    private Point2D get(Point2D p, boolean flag) {
         return get(root, p, flag);
     }
 
@@ -136,9 +154,9 @@ public class KdTree {
             return null;
         boolean cmp = false;
         if (flag)
-            cmp = compareDouble(x.p.x(), p.x());
+            cmp = compareDouble(p.x(), x.p.x());
         else
-            cmp = compareDouble(x.p.y(), p.y());
+            cmp = compareDouble(p.y(), x.p.y());
         if (cmp)
             return get(x.lb, p, !flag);
         else {
@@ -149,9 +167,9 @@ public class KdTree {
 
     }
 
-    public void put(Point2D p, boolean flag) { // Search for key. Update value
-                                               // if
-                                               // found; grow table if new.
+    private void put(Point2D p, boolean flag) { // Search for key. Update value
+                                                // if
+                                                // found; grow table if new.
         // root =
         put(root, p, flag);
     }
@@ -181,7 +199,8 @@ public class KdTree {
 
             // x.lb = put(x.lb, p, !flag);
             if (x.lb == null) {
-                // System.out.println("Adding left node to"+x.p.toString()+"with rect"+x.rect.toString());
+                // System.out.println("Adding left node to"+
+                // x.p.toString()+"with rect"+x.rect.toString());
                 Node n = new Node();
                 n.p = p;
                 size++;
@@ -198,7 +217,8 @@ public class KdTree {
             }
         } else {
             if (x.rt == null) {
-                // System.out.println("Adding right node to"+x.p.toString()+"with rect"+x.rect.toString());
+                // System.out.println("Adding right node to"+x.p.toString()+
+                // "with rect"+x.rect.toString());
                 Node n = new Node();
                 n.p = p;
                 size++;
@@ -225,11 +245,7 @@ public class KdTree {
     }
 
     private boolean compareDouble(double d1, double d2) {
-        if (d1 < d2) {
-            return true;
-        } else {
-            return false;
-        }
+        return d1 < d2;
     }
 
     public static void main(String[] args) // unit testing of the methods

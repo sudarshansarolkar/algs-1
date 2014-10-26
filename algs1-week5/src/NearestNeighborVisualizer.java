@@ -29,7 +29,7 @@ public class NearestNeighborVisualizer {
             kdtree.insert(p);
             brute.insert(p);
         }
-
+       
         while (true) {
 
             // the location (x, y) of the mouse
@@ -42,7 +42,7 @@ public class NearestNeighborVisualizer {
             StdDraw.setPenColor(StdDraw.BLACK);
             StdDraw.setPenRadius(.01);
             brute.draw();
-
+            kdtree.draw();
             // draw in red the nearest neighbor (using brute-force algorithm)
             StdDraw.setPenRadius(.03);
             StdDraw.setPenColor(StdDraw.RED);
