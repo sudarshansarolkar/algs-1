@@ -91,32 +91,54 @@ public class KdTree {
     public Point2D nearest(Point2D p) // a nearest neighbor in the set to point
                                       // p; null if the set is empty
     {
-        Point2D[] n2 = new Point2D[1];
-        if (root != null)
-            n2[0] = root.p;
-        nearest(root, p, n2);
-        return n2[0];
+        NNode res = new NNode();
+        if (root != null) {
+            res.p = root.p;
+            res.dis = res.p.distanceSquaredTo(p);
+        }
+        nearest(root, p, res);
+        return res.p;
     }
 
-    private void nearest(Node n, Point2D p, Point2D[] res) {
+    private void nearest(Node n, Point2D p, NNode res) {
         if (n == null)
             return;
 
-        double dis = 0;
-        if (res[0] != null)
-            dis = res[0].distanceSquaredTo(p);
-        //if (!n.rect.contains(p)) {
-            double dis2 = n.rect.distanceSquaredTo(p);
+        double dis2 = n.rect.distanceSquaredTo(p);
 
-            if (dis2 >= dis)
-                return;
-        //}
-
-        if (res[0] == null || n.p.distanceSquaredTo(p) < dis) {
-            res[0] = n.p;
+        if (dis2 > res.dis)
+            return;
+        
+        double dis3 =  n.p.distanceSquaredTo(p);
+        if (dis3 < res.dis) {
+            res.p = n.p;
+            res.dis = dis3;
         }
-        nearest(n.lb, p, res);
-        nearest(n.rt, p, res);
+        
+        
+        // choose the subtree that is on the same side of the splitting line as 
+        // the query point as the first subtree to explore the closest point found 
+        // while exploring the first subtree 
+        // may enable pruning of the second subtree. 
+        
+        boolean exportLeft = false;
+        boolean exportRight = false;
+        if (n.lb != null && n.lb.rect.contains(p)) {
+            nearest(n.lb, p, res);
+            exportLeft = true;
+        }
+        if (n.rt != null && n.rt.rect.contains(p)) {
+            nearest(n.rt, p, res);
+            exportRight = true;
+        }
+
+        if (!exportLeft) {
+            nearest(n.lb, p, res);
+        }
+
+        if (!exportRight) {
+            nearest(n.rt, p, res);
+        }
 
     }
 
@@ -134,7 +156,10 @@ public class KdTree {
 
         return false;
     }*/
-
+    private static class NNode{
+        Point2D p;
+        double dis;
+    }
     private static class Node {
         private Point2D p; // the point
         private RectHV rect; // the axis-aligned rectangle corresponding to this
