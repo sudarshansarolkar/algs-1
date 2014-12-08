@@ -2,6 +2,8 @@ public class SAP {
 
    // constructor takes a digraph (not necessarily a DAG)
    public SAP(Digraph G){
+       if(G == null)
+           throw new NullPointerException("null arguments");
        
    }
 
@@ -17,16 +19,30 @@ public class SAP {
 
    // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
    public int length(Iterable<Integer> v, Iterable<Integer> w){
+       if(v == null || w == null)
+           throw new NullPointerException("null arguments");
        return 0;
    }
 
    // a common ancestor that participates in shortest ancestral path; -1 if no such path
    public int ancestor(Iterable<Integer> v, Iterable<Integer> w){
+       if(v == null || w == null)
+           throw new NullPointerException("null arguments");
        return 0;
    }
 
    // do unit testing of this class
    public static void main(String[] args){
-       
+       In in = new In(args[0]);
+       Digraph G = new Digraph(in);
+       SAP sap = new SAP(G);
+       while (!StdIn.isEmpty()) {
+           int v = StdIn.readInt();
+           int w = StdIn.readInt();
+           int length   = sap.length(v, w);
+           int ancestor = sap.ancestor(v, w);
+           StdOut.printf("length = %d, ancestor = %d\n", length, ancestor);
+       }
+
    }
 }
