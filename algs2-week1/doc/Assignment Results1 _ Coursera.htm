@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html class="supports-svg" xmlns:fb="http://ogp.me/ns/fb#" itemtype="http://schema.org"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE7"><meta name="fragment" content="!"><meta name="robots" content="NOODP"><meta charset="utf-8"><meta property="og:title" content="Coursera"><meta property="og:type" content="website"><meta property="og:image" content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png"><meta property="og:url" content="https://www.coursera.org/assignment/part_results?part_id=18"><meta property="og:site_name" content="Coursera"><meta property="og:locale" content="en_US"><meta property="og:description" content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits."><meta property="fb:admins" content="727836538,4807654"><meta property="fb:app_id" content="274998519252278"><meta name="twitter:site" content="Coursera"><meta name="twitter:app:name:iphone" content="Coursera"><meta name="twitter:app:name:ipad" content="Coursera"><meta name="twitter:app:name:googleplay" content="Coursera"><meta name="twitter:app:id:iphone" content="id736535961"><meta name="twitter:app:id:ipad" content="id736535961"><meta name="twitter:app:id:googleplay" content="org.coursera.android"><meta name="description" content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits."><meta name="image" content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png"><meta name="apple-itunes-app" content="app-id=736535961"><title>Assignment Results | Coursera</title>    <link href="Assignment%20Results1%20_%20Coursera_files/spark.css" rel="stylesheet" type="text/css">
+      <link href="Assignment%20Results1%20_%20Coursera_files/course.css" rel="stylesheet" type="text/css">
+    <link href="https://spark-public.s3.amazonaws.com/algs4partII/static/images/favicon.ico" rel="icon">
+<script src="Assignment%20Results1%20_%20Coursera_files/ga.js" async="" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/routes.js" data-requiremodule="pages/spark/routes" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><meta content="summary" name="twitter:card"><meta content="Coursera" name="twitter:title"><meta content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits." name="twitter:description"><meta content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png" name="twitter:image:src"><script src="Assignment%20Results1%20_%20Coursera_files/204.js" data-requiremodule="js/lib/204" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/student-page.js" data-requiremodule="pages/spark/views/template/student-page" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/student-page_002.js" data-requiremodule="pages/spark/views/template/student-page.html" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/sparkSurveyQuestionsSessionModel.js" data-requiremodule="bundles/assess/assessmentTypes/sparkSurveyQuestions/sparkSurveyQuestionsSessionModel" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/sessionModel.js" data-requiremodule="bundles/assess/assessmentTypes/quickQuestions/sessionModel" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/student-page_003.js" data-requiremodule="pages/spark/views/template/nls/student-page" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/SessionModel.js" data-requiremodule="bundles/assess/assessmentTypes/SessionModel" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/QuestionCollection.js" data-requiremodule="bundles/assess/framework/QuestionCollection" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/QuestionModel.js" data-requiremodule="bundles/assess/framework/QuestionModel" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/backbone.js" data-requiremodule="bundles/assess/lib/backbone.hascollections" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/underscore.js" data-requiremodule="js/lib/underscore.extend" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/header_003.js" data-requiremodule="pages/spark/views/template/header" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/sidebar.js" data-requiremodule="pages/spark/views/template/sidebar" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/readme.js" data-requiremodule="js/lib/readme" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/header_002.js" data-requiremodule="pages/spark/views/template/header.html" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/LearnerStoriesCollection.js" data-requiremodule="pages/analytics/models/LearnerStoriesCollection" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/assessApi.js" data-requiremodule="pages/spark-survey/assessApi" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/sidebar_003.js" data-requiremodule="pages/spark/views/template/sidebar.html" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/signature_track.js" data-requiremodule="spark/app/signature/js/signature_track" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/HelpCenterLinks.js" data-requiremodule="pages/help-center/data/HelpCenterLinks" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/header.js" data-requiremodule="pages/spark/views/template/nls/header" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/sidebar_002.js" data-requiremodule="pages/spark/views/template/nls/sidebar" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/LearnerStoryModel.js" data-requiremodule="pages/analytics/models/LearnerStoryModel" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/signatureTrackLastChanceModal.js" data-requiremodule="spark/app/signature/js/signatureTrackLastChanceModal.html" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/flexjoinLastChanceModal.js" data-requiremodule="spark/app/signature/js/flexjoinLastChanceModal.html" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/util.js" data-requiremodule="js/lib/util" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Assignment%20Results1%20_%20Coursera_files/path.js" data-requiremodule="js/lib/path" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script></head><body><div id="fb-root"></div><div id="spark-help" class="hide"></div><a href="https://courserahelp.zendesk.com/hc/requests/new" target="_blank"><div style="z-index: 1" data-networkprioritysupportwidget="" role="button" class="helpwidget-tab hide">Premium Support</div></a><!-- - track IE8 and less browser for eventing purposes--><!--[if lte IE 8]><script>window._204 = window._204 || [];
+window._gaq = window._gaq || [];
+window._gaq.push(
+    ['_setAccount', 'UA-28377374-1'],
+    ['_setDomainName', window.location.hostname],
+    ['_setAllowLinker', true],
+    ['_trackPageview', window.location.pathname]);
+window._204.push(
+  ['client', 'home'],
+  {key:"pageview", value:window.location.pathname});</script><script src="https://dw0ugk4msqulk.cloudfront.net/a8cf26d9ab4c9d8f1d46e27dbdc59bcff729df69/js/lib/204.js"></script><script src="https://ssl.google-analytics.com/ga.js"></script><![endif]--><div id="fb-root"></div><div id="origami" data-js="origami"><div><div><div class="coursera-page"><div class="coursera-header" role="menubar"><div class="hidden">This page features MathJax technology to render mathematical formulae.
+If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.</div><h1 class="hidden">Algorithms, Part II</h1><!-- UNTIL dashboard announcement expires 2014-12-01 (then delete this code)--><div role="banner" class="course-topbar container-fluid"><div class="row-fluid"><div class="span3"><a href="https://www.coursera.org/" data-if-linkable="add-referrer" class="course-topbar-logo"></a></div><div style="float:right;" class="course-topbar-nav-container span9"><h2 class="hidden">Top Navigation Bar</h2><ul class="course-topbar-nav-list"><li class="course-topbar-nav-list-item"><a href="https://www.coursera.org/courses" data-if-linkable="add-referrer">Courses</a></li><li tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" aria-owns="course-topbar-my" data-popup="#course-topbar-my" data-popup-bind-open="mouseenter" data-popup-close="data-popup-close" style="cursor:pointer;" data-popup-direction="se" class="course-topbar-nav-list-item"><a data-user-id="1350958">Sudarshan S<i class="icon-caret-down"></i></a></li></ul></div></div><div id="course-topbar-aboutus" class="course-topbar-sublist"><a href="https://www.coursera.org//about/" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">About Us</a><a href="https://www.coursera.org//about/careers" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">Careers</a><a href="https://www.coursera.org//about/people" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">People</a><a href="https://www.coursera.org//about/contact" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">Contact Us</a></div><div id="course-topbar-my" class="course-topbar-sublist"><a data-popup-close="data-popup-close" href="https://www.coursera.org/" target="_new" class="course-topbar-sublist-item">My Courses</a><a data-popup-close="data-popup-close" href="https://www.coursera.org/account/profile" target="_new" class="course-topbar-sublist-item">Profile</a><a data-popup-close="data-popup-close" href="https://www.coursera.org/account/accomplishments" target="_new" class="course-topbar-sublist-item">Course Records</a><a href="https://www.coursera.org/account/settings" target="_new" class="course-topbar-sublist-item">Settings</a><a href="https://class.coursera.org/algs4partII-004/class/preferences" class="course-topbar-sublist-item">Course Preferences</a><a href="https://class.coursera.org/algs4partII-004/auth/logout" class="course-topbar-sublist-item">Sign Out</a></div></div><div class="course-topbanner-wrapper"><div class="course-topbanner"><div class="course-topbanner-university-logo"><a href="https://www.coursera.org/princeton" target="_blank" data-if-linkable="add-referrer" title="https://www.coursera.org/princeton" class="coursera-university-color"><img src="Assignment%20Results1%20_%20Coursera_files/university_logo.png" alt="princeton"></a></div><h1 class="course-topbanner-header"><a href="https://class.coursera.org/algs4partII-004/" data-if-linkable="modal-lock" class="course-topbanner-name coursera-university-color">Algorithms, Part II</a><br><span style="" class="course-topbanner-instructor">by Kevin Wayne, Robert Sedgewick</span></h1></div></div></div><div style="position:relative;" class="container-fluid"><div class="row-fluid"><div id="course-page-sidebar" role="navigation"><div class="coursera-sidebar" role="menubar"><div id="course-page-sidebar" role="navigation"><div class="course-navbar-container"><a href="https://class.coursera.org/algs4partII-004" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_index"><img src="Assignment%20Results1%20_%20Coursera_files/logo.png" style="width: 205px;height: 116px;margin: -15px 0px 8px 1px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);" alt="Course Home Page"></a><div data-coursera-course-search-nav-widget="data-coursera-course-search-nav-widget" class="input-append course-search-nav-box"><form method="get" action="/algs4partII-004/class/search" data-js-search-form="data-js-search-form" class="form-inline minimized-search"><label for="course-search-nav-input" class="accessible-text-for-reader">Search this course</label><input id="course-search-nav-input" name="q" data-js-search-input="data-js-search-input" type="text">&nbsp;<button type="submit" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="search" class="btn icon-search"><span class="accessible-text-for-reader">Search</span></button></form></div><h2 class="hidden">Side Navigation Bar</h2><ul class="course-navbar-list"><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partII-004/class/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Home" class="coursera-university-color"><span>Home </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partII-004/wiki/view?page=syllabus" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Syllabus" class="coursera-university-color"><span>Syllabus </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partII-004/wiki/view?page=schedule" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Schedule" class="coursera-university-color"><span>Schedule </span><span></span></a></li><li class="course-navbar-item"></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partII-004/lecture/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Lectures" class="coursera-university-color"><span>Lectures </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partII-004/quiz/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Exercises" class="coursera-university-color"><span>Exercises </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partII-004/assignment/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Programming_Assignments" class="coursera-university-color"><span>Programming Assignments </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partII-004/quiz/index?quiz_type=homework" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Job_Interview_Questions" class="coursera-university-color"><span>Job Interview Questions </span><span></span></a></li><li class="course-navbar-item"></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partII-004/forum/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Discussion_Forums" class="coursera-university-color"><span>Discussion Forums </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partII-004/wiki/ScheduleGoogleHangouts" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Google+_Hangouts" class="coursera-university-color"><span>Google+ Hangouts </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partII-004/wiki/view?page=errata" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Errata" class="coursera-university-color"><span>Errata </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/algs4partII-004/quiz/index?quiz_type=survey" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Surveys" class="coursera-university-color"><span>Surveys </span><span></span></a></li><li class="course-navbar-item"></li><li class="course-navbar-item"><a href="http://algs4.cs.princeton.edu/" target="_blank" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Booksite" class="coursera-university-color"><span>Booksite </span><span class="icon-share"></span><span class="accessible-text-for-reader">opens in new browser tab</span></a></li></ul><ul style="list-style-type:none;margin-left: 10px;"><li><a href="https://courserahelp.zendesk.com/" target="_blank" title="Open help articles in new window" class="coursera-university-color"><i class="icon-question-sign"></i>Help Articles</a></li></ul><ul style="list-style-type:none;margin-left: 10px;"><li><a href="https://class.coursera.org/algs4partII-004/forum/list?forum_id=10000&amp;url=https%3A%2F%2Fclass.coursera.org%2Falgs4partII-004%2Fassignment%2Fpart_results%3Fpart_id%3D18" class="coursera-university-color"><i class="icon-comments"></i>Course Materials Errors</a></li><li><a href="https://class.coursera.org/algs4partII-004/forum/list?forum_id=10001&amp;url=https%3A%2F%2Fclass.coursera.org%2Falgs4partII-004%2Fassignment%2Fpart_results%3Fpart_id%3D18" class="coursera-university-color"><i class="icon-comments"></i>Technical Issues</a></li></ul></div></div></div></div><div id="course-page-content" role="main"><div style="display: block;" id="spark" class="hide"><h2 class="course-page-header">Programming Assignment 1: WordNet | wordnet.zip
+  <a class="coursera-reporter-link" title="Click here if you're experiencing technical problems or found errors in the course materials." target="_blank" href="https://class.coursera.org/algs4partII-004/help/programming?url=https%3A%2F%2Fclass.coursera.org%2Falgs4partII-004%2Fassignment%2Fpart_results%3Fpart_id%3D18">
+     Help
+  </a>
+</h2>
+
+
+<table class="table table-condensed table-bordered table-striped">
+    <thead>
+        <tr>
+            <th colspan="3">Submission</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Submission time</td><td>Wed-10-Dec 07:16:35</td></tr>
+        <tr><td>Raw Score</td><td>70.58 / 100.00</td></tr>
+                <tr><td>Feedback</td><td>See the <a href="https://class.coursera.org/algs4partII-004/wiki/view?page=Assessments">Assessment Guide</a> for information on how to read this report. <h2>
+Assessment Summary</h2>
+<pre>Compilation:  <font color="#009900">PASSED</font>
+Style:        <font color="#990000">FAILED</font>
+Findbugs:     <font color="#009900">No potential bugs found.</font>
+API:          <font color="#009900">PASSED</font>
+
+Correctness:  <font color="#729900">20/35 tests passed</font>
+Memory:       <font color="#009900">4/4 tests passed</font>
+Timing:       <font color="#0A9900">15/16 tests passed</font>
+
+Aggregate score: <font color="#3F9900">70.58%</font> [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]</pre><h2>
+
+
+Assessment Details
+</h2>
+<pre>The following files were submitted:
+----------------------------------
+total 20K
+-rw-r--r-- 1 1.4K Dec 10 15:17 Outcast.java
+-rw-r--r-- 1 3.4K Dec 10 15:17 SAP.java
+-rw-r--r-- 1 4.6K Dec 10 15:17 WordNet.java
+-rw-r--r-- 1 2.9K Dec 10 15:17 studentSubmission.zip
+
+
+******************************************************************************
+*  compiling
+******************************************************************************
+
+
+% javac SAP.java
+*-----------------------------------------------------------
+================================================================
+
+% javac WordNet.java
+*-----------------------------------------------------------
+================================================================
+
+% javac Outcast.java
+*-----------------------------------------------------------
+================================================================
+
+
+
+% checkstyle *.java
+*-----------------------------------------------------------
+WordNet.java:2:8: Unused import - java.util.List.
+WordNet.java:4:8: Unused import - java.util.TreeSet.
+================================================================
+
+
+% findbugs *.class
+*-----------------------------------------------------------
+================================================================
+
+
+Testing the APIs of your programs.
+*-----------------------------------------------------------
+SAP:
+
+WordNet:
+
+Outcast:
+
+================================================================
+
+
+******************************************************************************
+*  correctness
+******************************************************************************
+
+Testing methods in SAP
+*-----------------------------------------------------------
+Running 19 total tests.
+
+Test 1: test length() and ancestor() on fixed digraphs
+  *  digraph1.txt
+  *  digraph2.txt
+  *  digraph3.txt
+  *  digraph4.txt
+  *  digraph5.txt
+  *  digraph6.txt
+  *  digraph9.txt
+==&gt; passed
+
+Test 2: check length() and ancestor() on WordNet digraph
+  *  100 random vertex pairs in digraph-wordnet.txt
+==&gt; passed
+
+Test 3: check length() and ancestor() on directed paths
+  *  5
+  *  10
+  *  20
+  *  50
+  *  100
+==&gt; passed
+
+Test 4: check length() and ancestor() on directed cycles
+  *  5
+  *  10
+  *  20
+  *  50
+  *  100
+==&gt; passed
+
+Test 5: check length() and ancestor() on complete graphs
+  *  5
+  *  10
+  *  20
+  *  50
+==&gt; passed
+
+Test 6: check length() and ancestor() on tournament digraphs
+  *  5
+  *  10
+  *  20
+  *  50
+==&gt; passed
+
+Test 7: check length() and ancestor() on complete binary trees
+  *  5
+  *  10
+  *  20
+  *  50
+  *  100
+==&gt; passed
+
+Test 8: check length() and ancestor() on random DAGs
+  *  5 vertices, 8 edges
+  *  10 vertices, 40 edges
+  *  20 vertices, 100 edges
+==&gt; passed
+
+Test 9: check length() and ancestor() on random rooted-in DAGs
+  *  5 vertices, 8 edges
+  *  10 vertices, 40 edges
+  *  20 vertices, 100 edges
+==&gt; passed
+
+Test 10: check length() and ancestor() on random rooted-out DAGs
+  *  5 vertices, 8 edges
+  *  10 vertices, 40 edges
+  *  20 vertices, 100 edges
+==&gt; passed
+
+Test 11: check length() and ancestor() on random rooted-in trees
+  *  5 vertices
+  *  10 vertices
+  *  20 vertices
+==&gt; passed
+
+Test 12: check length() and ancestor() on random rooted-out trees
+  *  5 vertices
+  *  10 vertices
+  *  20 vertices
+==&gt; passed
+
+Test 13: check length() and ancestor() on random simple digraphs
+  *  5 vertices, 8 edges
+  *  10 vertices, 40 edges
+  *  20 vertices, 100 edges
+==&gt; passed
+
+Test 14: check whether two SAP objects can be created at the same time
+  *  digraph1.txt and digraph2.txt
+  *  digraph3.txt and digraph4.txt
+  *  digraph5.txt and digraph6.txt
+  *  digraph2.txt and digraph1.txt
+==&gt; passed
+
+Test 15: check whether SAP is immutable
+  *  digraph1.txt
+     -  after adding edges (v, 0) to G
+     -  v = 0, w = 3
+     -  student length before = 2
+     -  student length after  = 1
+  *  digraph2.txt
+     -  after adding edges (v, 0) to G
+     -  v = 0, w = 2
+     -  student length before = 4
+     -  student length after  = 1
+  *  digraph3.txt
+     -  after adding edges (v, 0) to G
+     -  v = 0, w = 1
+     -  student length before = -1
+     -  student length after  = 1
+  *  digraph4.txt
+     -  after adding edges (v, 0) to G
+     -  v = 0, w = 1
+     -  student length before = 3
+     -  student length after  = 1
+  *  digraph5.txt
+     -  after adding edges (v, 0) to G
+     -  v = 0, w = 1
+     -  student length before = -1
+     -  student length after  = 1
+  *  digraph6.txt
+     -  after adding edges (v, 0) to G
+     -  v = 0, w = 2
+     -  student length before = 2
+     -  student length after  = 1
+  *  digraph-ambiguous-ancestor.txt
+     -  after adding edges (v, 0) to G
+     -  v = 0, w = 2
+     -  student length before = 2
+     -  student length after  = 1
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 16: test invalid arguments to length() and ancestor() in digraph1.txt
+  *  v = -1, w = 0
+  *  v = 0, w = -1
+  *  v = 13, w = 0
+  *  v = 0, w = 13
+  *  v = -1 2 7 , w = 1 4 6 10 11 
+  *  v = 2 7 , w = -1 1 4 6 10 11 
+  *  v = 13 2 7 , w = 1 4 6 10 11 
+  *  v = 2 7 , w = 13 1 4 6 10 11 
+==&gt; passed
+
+Test 17: test length() and ancestor() with Iterable arguments
+  *  100 random subsets of 1 and 1 vertices in digraph-wordnet.txt
+  *  100 random subsets of 1 and 2 vertices in digraph-wordnet.txt
+  *  100 random subsets of 2 and 1 vertices in digraph-wordnet.txt
+  *  100 random subsets of 2 and 2 vertices in digraph-wordnet.txt
+  *  100 random subsets of 3 and 11 vertices in digraph-wordnet.txt
+  *  100 random subsets of 11 and 3 vertices in digraph-wordnet.txt
+  *  100 random subsets of 0 and 5 vertices in digraph-wordnet.txt
+  *  100 random subsets of 5 and 0 vertices in digraph-wordnet.txt
+  *  100 random subsets of 0 and 0 vertices in digraph-wordnet.txt
+==&gt; passed
+
+Test 18: Check Iterable version of length() and ancestor() with null arguments
+==&gt; passed
+
+Test 19: random calls to length() and ancestor(), with probabilities
+         p1 and p2, respectively
+  *  random calls in a random rooted DAG (20 vertices, 100 edges)
+     (p1 = 0.5, p2 = 0.5)
+  *  random calls in a random digraph (20 vertices, 100 edges)
+     (p1 = 0.5, p2 = 0.5)
+==&gt; passed
+
+
+Total: 18/19 tests passed!
+
+================================================================
+
+******************************************************************************
+*  correctness (substituting reference SAP.java)
+******************************************************************************
+
+Testing methods in WordNet
+*-----------------------------------------------------------
+Running 14 total tests.
+
+Test 1: test distance() of random noun pairs
+  *  1000 pairs using synsets = synsets.txt; hypernyms = hypernyms.txt
+==&gt; passed
+
+Test 2: test distance() of all noun pairs
+  *  synsets = synsets15.txt; hypernyms = hypernyms15Path.txt
+  *  synsets = synsets15.txt; hypernyms = hypernyms15Tree.txt
+  *  synsets = synsets6.txt; hypernyms = hypernyms6TwoAncestors.txt
+  *  synsets = synsets11.txt; hypernyms = hypernyms11AmbiguousAncestor.txt
+  *  synsets = synsets8.txt; hypernyms = hypernyms8ModTree.txt
+  *  synsets = synsets8.txt; hypernyms = hypernyms8WrongBFS.txt
+  *  synsets = synsets11.txt; hypernyms = hypernyms11ManyPathsOneAncestor.txt
+  *  synsets = synsets8.txt; hypernyms = hypernyms8ManyAncestors.txt
+==&gt; passed
+
+Test 3: test distance() of random noun pairs
+  *  1000 pairs using synsets = synsets100-subgraph.txt; hypernyms = hypernyms100-subgraph.txt
+  *  1000 pairs using synsets = synsets500-subgraph.txt; hypernyms = hypernyms500-subgraph.txt
+  *  1000 pairs using synsets = synsets1000-subgraph.txt; hypernyms = hypernyms1000-subgraph.txt
+==&gt; passed
+
+Test 4: test sap() of random noun pairs
+  *  1000 pairs using synsets = synsets.txt; hypernyms = hypernyms.txt
+     -  student returns invalid synset on pair 5 of 1000
+     -  nounA = goldfields
+     -  nounB = corpuscle
+     -  student   distance() = 8
+     -  reference distance() = 8
+     -  student   sap() = 'living_thing'
+     -  reference sap() = 'living_thing animate_thing'
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 5: test sap() of all noun pairs
+  *  synsets = synsets15.txt; hypernyms = hypernyms15Path.txt
+  *  synsets = synsets15.txt; hypernyms = hypernyms15Tree.txt
+  *  synsets = synsets6.txt; hypernyms = hypernyms6TwoAncestors.txt
+  *  synsets = synsets11.txt; hypernyms = hypernyms11AmbiguousAncestor.txt
+  *  synsets = synsets8.txt; hypernyms = hypernyms8ModTree.txt
+  *  synsets = synsets8.txt; hypernyms = hypernyms8WrongBFS.txt
+  *  synsets = synsets11.txt; hypernyms = hypernyms11ManyPathsOneAncestor.txt
+  *  synsets = synsets8.txt; hypernyms = hypernyms8ManyAncestors.txt
+==&gt; passed
+
+Test 6: test sap() of random noun pairs
+  *  1000 pairs using synsets = synsets100-subgraph.txt; hypernyms = hypernyms100-subgraph.txt
+     -  student returns invalid synset on pair 22 of 1000
+     -  nounA = factor_XIII
+     -  nounB = unit
+     -  student   distance() = 6
+     -  reference distance() = 6
+     -  student   sap() = 'unit'
+     -  reference sap() = 'unit building_block'
+  *  1000 pairs using synsets = synsets500-subgraph.txt; hypernyms = hypernyms500-subgraph.txt
+     -  student returns invalid synset on pair 3 of 1000
+     -  nounA = antihemophilic_factor
+     -  nounB = essential_oil
+     -  student   distance() = 7
+     -  reference distance() = 7
+     -  student   sap() = 'macromolecule'
+     -  reference sap() = 'macromolecule supermolecule'
+  *  1000 pairs using synsets = synsets1000-subgraph.txt; hypernyms = hypernyms1000-subgraph.txt
+     -  student returns invalid synset on pair 1 of 1000
+     -  nounA = restriction_enzyme
+     -  nounB = ski_wax
+     -  student   distance() = 8
+     -  reference distance() = 8
+     -  student   sap() = 'macromolecule'
+     -  reference sap() = 'macromolecule supermolecule'
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 7: check whether WordNet is immutable
+  *  synsets = synsets.txt; hypernyms = hypernyms.txt
+==&gt; passed
+
+Test 8: check that constructor throws an IllegalArgumentException when the input is not a rooted DAG
+  *  synsets3.txt, hypernyms3InvalidTwoRoots.txt
+     -  failed to throw a java.lang.IllegalArgumentException
+  *  synsets3.txt, hypernyms3InvalidCycle.txt
+     -  failed to throw a java.lang.IllegalArgumentException
+  *  synsets6.txt, hypernyms6InvalidTwoRoots.txt
+     -  failed to throw a java.lang.IllegalArgumentException
+  *  synsets6.txt, hypernyms6InvalidCycle.txt
+     -  failed to throw a java.lang.IllegalArgumentException
+  *  synsets6.txt, hypernyms6InvalidCycle+Path.txt
+     -  failed to throw a java.lang.IllegalArgumentException
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 9: check that distance() and sap() throw an IllegalArgumentException
+        when either argument is not a WordNet noun
+  *  synsets15.txt, hypernyms15Tree.txt, invalid noun = invalid
+     java.lang.NullPointerException
+
+     -  failed to throw a java.lang.IllegalArgumentException
+  *  synsets15.txt, hypernyms15Tree.txt, invalid noun = b 
+     java.lang.NullPointerException
+
+     -  failed to throw a java.lang.IllegalArgumentException
+  *  synsets15.txt, hypernyms15Tree.txt, invalid noun = eleventeen
+     java.lang.NullPointerException
+
+     -  failed to throw a java.lang.IllegalArgumentException
+  *  synsets15.txt, hypernyms15Tree.txt, invalid noun = INVALID
+     java.lang.NullPointerException
+
+     -  failed to throw a java.lang.IllegalArgumentException
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 10: check isNoun()
+  *  synsets = synsets.txt; hypernyms = hypernyms.txt
+  *  synsets = synsets15.txt; hypernyms = hypernyms15Path.txt
+  *  synsets = synsets8.txt; hypernyms = hypernyms8ModTree.txt
+==&gt; passed
+
+Test 11: check nouns()
+  *  synsets = synsets.txt; hypernyms = hypernyms.txt
+  *  synsets = synsets15.txt; hypernyms = hypernyms15Path.txt
+  *  synsets = synsets8.txt; hypernyms = hypernyms8ModTree.txt
+==&gt; passed
+
+Test 12: check whether two WordNet objects can be created at the same time
+  *  synsets1 = synsets15.txt; hypernyms1 = hypernyms15Tree.txt
+     synsets2 = synsets15.txt; hypernyms2 = hypernyms15Path.txt
+  *  synsets1 = synsets.txt; hypernyms1 = hypernyms.txt
+     synsets2 = synsets15.txt; hypernyms2 = hypernyms15Path.txt
+==&gt; passed
+
+Test 13: call distance(), sap(), and isNoun() with null arguments
+  *  synsets15.txt, hypernyms15Path.txt
+==&gt; passed
+
+Test 14: random calls to isNoun(), distance(), and sap(), with
+         probabilities p1, p2, and p3, respectively
+  *  100 random calls (p1 = 0.5, p2 = 0.5, p3 = 0.0)
+  *  100 random calls (p1 = 0.5, p2 = 0.0, p3 = 0.5)
+     -  student sap() is too far to be a valid common ancestor when testing pair 5 of 100
+     -  nounA = n
+     -  nounB = Insessores
+     -  student   sap() = 'abstraction'
+     -  reference sap() = 'abstraction abstract_entity'
+     -  student   distance() = 13
+     -  reference distance() to 'abstraction abstract_entity' = 13
+     -  actual distance to 'abstraction' = -1
+     -  failed on call 5 to sap()
+  *  100 random calls (p1 = 0.0, p2 = 0.5, p3 = 0.5)
+
+Total: 0/14 tests passed:<font color="#990000"><b>Test aborted. Ran out of time or crashed before completion.</b></font>
+================================================================
+
+******************************************************************************
+*  correctness (substituting reference SAP.java and WordNet.java)
+******************************************************************************
+
+Testing methods in Outcast
+*-----------------------------------------------------------
+Running 2 total tests.
+
+Test 1: test outcast() on WordNet digraph
+        (synsets = synsets.txt; hypernyms = hypernyms.txt)
+  *  outcast2.txt
+  *  outcast3.txt
+  *  outcast4.txt
+  *  outcast5.txt
+  *  outcast5a.txt
+  *  outcast7.txt
+  *  outcast8.txt
+  *  outcast8a.txt
+  *  outcast8b.txt
+  *  outcast8c.txt
+  *  outcast9.txt
+  *  outcast9a.txt
+  *  outcast10.txt
+  *  outcast10a.txt
+  *  outcast11.txt
+  *  outcast12.txt
+  *  outcast12a.txt
+  *  outcast17.txt
+  *  outcast20.txt
+  *  outcast29.txt
+==&gt; passed
+
+Test 2: test outcast() on WordNet subgraph
+        (synsets = synsets50000-subgraph.txt; hypernyms = hypernyms50000-subgraph.txt)
+  *  outcast2.txt
+  *  outcast3.txt
+  *  outcast5.txt
+  *  outcast5a.txt
+  *  outcast7.txt
+  *  outcast8.txt
+  *  outcast8b.txt
+  *  outcast8c.txt
+  *  outcast9.txt
+  *  outcast10.txt
+  *  outcast11.txt
+==&gt; passed
+
+
+Total: 2/2 tests passed!
+
+================================================================
+
+******************************************************************************
+*  memory
+******************************************************************************
+
+Computing memory of SAP
+*-----------------------------------------------------------
+Running 1 total tests.
+
+student     memory    = 8019952 bytes
+reference   memory    = 8019944 bytes
+ratio                 = 1.00
+maximum allowed ratio = 2.50
+
+vertices = 82192
+edges    = 84505
+
+Total: 1/1 tests passed!
+
+================================================================
+
+
+
+Computing memory of WordNet
+*-----------------------------------------------------------
+Running 3 total tests.
+
+Test 1a: test memory of WordNet object
+  *  synsets = synsets1000-subgraph.txt; hypernyms = hypernyms1000-subgraph.txt
+     -  student   memory = 1047568 bytes
+     -  reference memory = 1190720 bytes
+     -  number vertices  = 1000
+     -  number of edges  = 1008
+     -  student / reference ratio  =  0.9
+     -  maximum allowed rato       =  2.0
+
+==&gt; passed
+
+Test 1b: test memory of WordNet object
+  *  synsets = synsets5000-subgraph.txt; hypernyms = hypernyms5000-subgraph.txt
+     -  student   memory = 5221328 bytes
+     -  reference memory = 5912456 bytes
+     -  number vertices  = 5000
+     -  number of edges  = 5059
+     -  student / reference ratio  =  0.9
+     -  maximum allowed rato       =  2.0
+
+==&gt; passed
+
+Test 1c: test memory of WordNet object
+  *  synsets = synsets10000-subgraph.txt; hypernyms = hypernyms10000-subgraph.txt
+     -  student   memory = 11819944 bytes
+     -  reference memory = 13776128 bytes
+     -  number vertices  = 10000
+     -  number of edges  = 10087
+     -  student / reference ratio  =  0.9
+     -  maximum allowed rato       =  2.0
+
+==&gt; passed
+
+Total: 3/3 tests passed!
+
+================================================================
+
+
+
+******************************************************************************
+*  timing
+******************************************************************************
+
+Timing SAP
+*-----------------------------------------------------------
+Running 7 total tests.
+
+Test 1: time SAP constructor
+   *  digraph-wordnet.txt
+      -  student solution time =  0.00 seconds
+      -  maximum allowed  time =  1.00 seconds
+==&gt; passed
+
+Test 2a-c: time length() and ancestor() with random pairs of vertices
+  *  digraph-wordnet.txt
+     -  reference solution calls per second:   34177.33
+     -  student   solution calls per second:     326.67
+     -  reference / student ratio:               104.62
+
+=&gt; passed    student &lt;= 25000x reference
+=&gt; passed    student &lt;=  2500x reference
+=&gt; passed    student &lt;=   250x reference
+
+Test 3a-c: time length() and ancestor() with random sets of 5 vertices
+  *  digraph-wordnet.txt
+     -  reference solution calls per second:    7972.67
+     -  student   solution calls per second:     600.00
+     -  reference / student ratio:                13.29
+
+=&gt; passed    student &lt;= 10000x reference
+=&gt; passed    student &lt;=  1000x reference
+=&gt; passed    student &lt;=   100x reference
+
+
+Total: 7/7 tests passed!
+
+================================================================
+
+
+
+******************************************************************************
+*  timing (substituting reference SAP.java)
+******************************************************************************
+
+Timing WordNet
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Test 1: timing WordNet constructor
+  *  synsets = synsets.txt; hypernyms = hypernyms.txt
+     -  student constructor time = 10.71 seconds
+     -  maximum allowed     time = 10.00 seconds
+==&gt; <font color="#990000"><b>FAILED</b></font>
+
+Test 2: check that exactly one SAP object created per WordNet object
+==&gt; passed
+
+Test 3a-c: timing sap() and distance() with random nouns
+  *  synsets = synsets.txt; hypernyms = hypernyms.txt
+     -  reference solution calls per second:    8610.00
+     -  student   solution calls per second:    9023.00
+     -  reference / student ratio:                 0.95
+
+=&gt; passed    student &lt;= 10000x reference
+=&gt; passed    student &lt;=  1000x reference
+=&gt; passed    student &lt;=   100x reference
+=&gt; passed    student &lt;=    10x reference
+=&gt; passed    student &lt;=     5x reference
+
+Test 4: timing isNoun() with random nouns
+  *  synsets = synsets.txt; hypernyms = hypernyms.txt
+     -  reference solution calls per second:   63675.00
+     -  student   solution calls per second:   53515.00
+     -  reference / student ratio:                 1.19
+     -  allowed ratio:                             2.00
+==&gt; passed
+
+Total: 7/8 tests passed!
+
+================================================================
+
+
+
+******************************************************************************
+*  timing (with reference SAP.java and WordNet.java)
+******************************************************************************
+
+Timing Outcast
+*-----------------------------------------------------------
+Running 1 total tests.
+
+12.32 seconds to build WordNet
+
+Computing time to find outcasts. Total time must not exceed 5 seconds.
+
+
+    filename       N     time
+-----------------------------
+   outcast4.txt    4     0.03
+   outcast5.txt    5     0.08
+  outcast5a.txt    5     0.11
+   outcast5.txt    5     0.06
+   outcast7.txt    7     0.03
+   outcast8.txt    8     0.08
+  outcast8a.txt    8     0.04
+  outcast8b.txt    8     0.06
+  outcast8c.txt    8     0.04
+   outcast9.txt    9     0.05
+  outcast9a.txt    9     0.05
+  outcast10.txt   10     0.03
+ outcast10a.txt   10     0.03
+  outcast11.txt   11     0.04
+  outcast12.txt   12     0.01
+ outcast12a.txt   12     0.00
+  outcast20.txt   20     0.08
+  outcast29.txt   29     1.30
+=&gt; passed, total elapsed time: 2.11
+
+Total: 1/1 tests passed!
+
+================================================================
+
+
+
+</pre> </td></tr>
+    </tbody>
+</table>
+
+</div></div></div></div></div><div class="coursera-footer"></div></div></div></div><!--[if gte IE 9]><script>document.getElementById("coursera-loading-js").style.display = 'block';</script><![endif]-->
+<!--[if lte IE 8]><script>document.getElementById("coursera-loading-nojs").style.display = 'block';</script><![endif]-->
+<!--[if !IE]> --><script>document.getElementById("coursera-loading-js").style.display = 'block';</script><!-- <![endif]--><script>if (/zh/i.test(window.localStorage ? localStorage.getItem('locale') : '') || '{{ locale }}') {
+  document.getElementById('get-browser-zh').style.display = 'block';
+}</script><!--[if !IE]> --><script>document.getElementById('coursera-loading-js').style.display = 'block';</script><!-- <![endif]-->
+<script src="Assignment%20Results1%20_%20Coursera_files/require.js"></script><script data-baseurl="https://dw0ugk4msqulk.cloudfront.net/a8cf26d9ab4c9d8f1d46e27dbdc59bcff729df69/" data-version="a8cf26d9ab4c9d8f1d46e27dbdc59bcff729df69" data-timestamp="1418175725342" data-debug="0" data-locale="en_US" id="_require">if(document.getElementById('coursera-loading-js').style.display == 'block') {
+  (function(el) {
+     require.config({
+       //enforceDefine: true,
+       waitSeconds: 75,
+       baseUrl: el.getAttribute('data-baseurl'),
+       urlArgs: el.getAttribute('data-debug') == '1' ? 'v=' + el.getAttribute('data-timestamp') : '',
+       shim: {
+          'underscore': {
+             exports: '_'
+          },
+          'backbone': {
+             deps: ['underscore', 'jquery'],
+             exports: 'Backbone',
+             init: function(_, $) {
+               Backbone.$ = $;
+               return Backbone;
+             }
+          },
+          'pages/hg/thirdparty/js/backbone.marionette': {
+            deps: ['backbone']
+          },
+          'pages/hg/thirdparty/js/webshims/polyfiller': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/webshims/extras/mousepress': {
+            deps: ['jquery', 'pages/hg/thirdparty/js/webshims/polyfiller']
+          },
+          'pages/hg/thirdparty/js/jquery.throttle': {
+            deps: ['jquery']
+          },
+          'js/lib/jquery.linkify': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/js/bootstrap/alert': {
+            deps: ['jquery', 'pages/hg/thirdparty/js/bootstrap/transition']
+          },
+          'spark/core/js/jquery_ui': {
+            deps: ['jquery']
+          },
+          'spark/core/js/jquery.history': {
+            deps: ['jquery']
+          },
+          'js/lib/bootstrap.tooltip': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/bootstrap/transition': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/bootstrap/tab': {
+            deps: ['jquery']
+          },
+          'bundles/videojs/lib/video.4.3.0': {
+            exports: 'vjs'
+          }
+       },
+       paths: {
+          'q': 'js/vendor/q.v1-0-1',
+          'react-with-addons': 'js/vendor/react-with-addons.v0-12',
+          'jquery':                         'pages/spark/jquery',
+          'underscore':                     'js/vendor/underscore.v1-5-2',
+          'backbone':                       'js/vendor/backbone.v1-1-0',
+          'backbone.relational':            'js/lib/backbone.relational.0.8.6',
+          'i18n':                           'js/lib/i18n._t',
+          'css':                            'js/vendor/require.css.v0-1-2',
+          'memoize':                        'js/lib/require.memoize.v0-0-1',
+          'pages/spark/models/user.json':   'empty:',
+          'pages/spark/models/course.json': 'empty:',
+          'pages/spark/models/navbar.json': 'empty:'
+       },
+       callback: function() {
+                    require(['pages/spark/routes']);
+                },
+       config: {
+         i18n: {
+           locale: (window.localStorage ? localStorage.getItem('locale') : '') || el.getAttribute('data-locale')
+         }
+       }
+     });
+  })(document.getElementById('_require'));
+}
+</script><script>define('pages/spark/models/user.json', [], function(){
+      return JSON.parse("{\"id\":1350958,\"email_address\":\"sudarshan.sarolkar@gmail.com\",\"full_name\":\"Sudarshan S\",\"locale\":\"en_US\",\"timezone\":\"America\\\/Los_Angeles\",\"access_group_id\":\"4\",\"registration_time\":\"1410627290\",\"last_access_time\":\"1417399388\",\"last_access_ip\":\"98.248.222.79\",\"signature_track_register_time\":\"0\",\"email_announcement\":\"1\",\"email_forum\":\"1\",\"in_signature_track\":\"0\",\"wishes_proctored_exam\":\"0\",\"first_name\":\"Sudarshan\",\"permissions\":[\"default\",\"allow_site_access\"],\"group\":\"Student\",\"anonymous\":false,\"forum_title\":\"Student\",\"signature_track_state\":1,\"verified_quizzes\":[],\"submitted_quizzes\":[],\"scheduled_proctored_exam\":null,\"last_chance_modal\":null,\"flexjoin_last_chance_modal\":null}");
+  });
+define('pages/spark/models/course.json', [], function(){
+      return JSON.parse("{\"id\":972711,\"isPrivate\":false,\"type\":\"public\",\"name\":\"Algorithms, Part II\",\"instructor\":\"Kevin Wayne, Robert Sedgewick\",\"sessionName\":\"algs4partII-004\",\"externalBaseURL\":\"https:\\\/\\\/www.coursera.org\\\/\",\"shortname\":\"algs4partII\",\"host\":\"https:\\\/\\\/www.coursera.org\\\/\",\"assetUnversionedLink\":\"https:\\\/\\\/dw0ugk4msqulk.cloudfront.net\\\/\",\"cheggID\":\"\",\"hasLTI\":true,\"badgevilleDomain\":\"\",\"linkable\":false,\"universityShortname\":\"princeton\",\"signatureTrackStatus\":{\"signature_track_enabled\":0},\"courseURLs\":{\"log_in_link\":\"https:\\\/\\\/accounts.coursera.org\\\/signin?post_redirect=https%3A%2F%2Faccounts.coursera.org%2Fsignin%3Fuser_action%3Dclass%26course_id%3D972711%26post_redirect%3Dhttps%253A%252F%252Fclass.coursera.org%252Falgs4partII-004%252Fauth%252Fauth_redirector%253Ftype%253Dlogin%2526subtype%253Dnormal%2526visiting%253D\",\"sign_up_link\":\"https:\\\/\\\/accounts.coursera.org\\\/signup?enroll_cid=972711&enroll_sn=algs4partII&enroll_n=Algorithms, Part II\",\"view_course_info_link\":\"https:\\\/\\\/www.coursera.org\\\/course\\\/algs4partII\",\"sign_up_link_cant_enroll\":\"https:\\\/\\\/accounts.coursera.org\\\/signup?post_redirect=https%3A%2F%2Fwww.coursera.org%2Fcourse%2Falgs4partII\"},\"courseBase\":\"https:\\\/\\\/class.coursera.org\\\/algs4partII-004\\\/\",\"search\":true,\"hideWiki\":true,\"aceStartRegistrationDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceEndRegistrationDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceExamStartDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceExamEndDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceExamRules\":\"\",\"aceExamDuration\":\"\",\"aceBeforeExam\":false,\"aceAfterExam\":true,\"aceHours\":null,\"aceCreditType\":\"\",\"acePrice\":null,\"aceExamID\":null,\"aceEligible\":false,\"canRegisterForACE\":false,\"specialization\":null,\"supportForums\":true,\"textbooks\":\"\",\"inVideoQuizV2\":false,\"in_flexjoin\":0,\"honorCodeExtraText\":\"I will not post solutions or partial solutions to the programming assignments publicly (e.g., in the discussion forums or in public code repositories such as GitHub).\",\"honorCodeCustomTitle\":\"\",\"honorCodeCustomButton\":\"\",\"studentAccessDisabled\":0,\"disableQQs\":false}");
+  });
+  define('pages/spark/models/navbar.json', [], function(){
+      return JSON.parse("{\"items\":[{\"name\":\"Home\",\"icon\":\"home\",\"link_type\":\"circuit\",\"link_data\":\"class:index\"},{\"name\":\"Syllabus\",\"icon\":\"wiki\",\"link_type\":\"circuit\",\"link_data\":\"wiki\\\/view?page=syllabus\"},{\"name\":\"Schedule\",\"icon\":\"wiki\",\"link_type\":\"circuit\",\"link_data\":\"wiki\\\/view?page=schedule\"},{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"Lectures\",\"icon\":\"lecture\",\"link_type\":\"circuit\",\"link_data\":\"lecture:index\"},{\"name\":\"Exercises\",\"icon\":\"quiz\",\"link_type\":\"circuit\",\"link_data\":\"quiz:index\"},{\"name\":\"Programming Assignments\",\"icon\":\"assignment\",\"link_type\":\"circuit\",\"link_data\":\"assignment:index\"},{\"name\":\"Job Interview Questions\",\"icon\":\"quiz\",\"link_type\":\"circuit\",\"link_data\":\"quiz:index?quiz_type=homework\"},{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"Discussion Forums\",\"icon\":\"forum\",\"link_type\":\"circuit\",\"link_data\":\"forum:index\"},{\"name\":\"Google+ Hangouts\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"ScheduleGoogleHangouts\"},{\"name\":\"Errata\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"wiki\\\/view?page=errata\"},{\"name\":\"Surveys\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"quiz:index?quiz_type=survey\"},{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"Booksite\",\"icon\":\"wiki\",\"link_type\":\"window_link\",\"link_data\":\"http:\\\/\\\/algs4.cs.princeton.edu\"}]}");
+  });
+</script><script>var coursera_enable_new_help_center = false;
+</script><div class="hide confirm-navigation modal"><div class="modal-header"><h3>Confirm Navigation</h3></div><div class="modal-body"><div class="confirm-navigation-message"></div><div>Are you sure you want to leave this page?</div></div><div class="modal-footer"><button data-modal-close="data-modal-close" class="btn confirm-navigation-stay">Stay on this Page</button><button data-modal-close="data-modal-close" class="btn btn-danger confirm-navigation-leave">Leave this Page</button></div></div><div style="display: none;" class="coursera-async-message"></div></body></html>
