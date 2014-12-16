@@ -16,24 +16,27 @@ public class SeamCarver {
    {
        height = picture.height();
        width = picture.width();
-       data = new RGB[width][height];
+       data = new RGB[height][width];
        
        for(int i =0; i<height;i++)
            for(int j =0; j<width;j++){
-               data[j][i] = new RGB();
-               data[j][i].R = (byte) picture.get(j, i).getRed();
-               data[j][i].G = (byte) picture.get(j, i).getGreen();
-               data[j][i].B = (byte) picture.get(j, i).getBlue();
+               data[i][j] = new RGB();
+               data[i][j].R = (byte) picture.get(j, i).getRed();
+               data[i][j].G = (byte) picture.get(j, i).getGreen();
+               data[i][j].B = (byte) picture.get(j, i).getBlue();
            }
    }
    public Picture picture()                          // current picture
    {
+	   if(isTransposted)
+		   transpose();
+	   
        Picture p = new Picture(width, height);
        
            for(int i =0; i<height;i++)
                for(int j =0; j<width;j++){
-               Color color = new Color(data[j][i].R, data[j][i].G, data[j][i].B);
-               p.set(i, j, color);
+               Color color = new Color(data[i][j].R, data[i][j].G, data[i][j].B);
+               p.set(j, i, color);
            }
        return p;   
    }
@@ -57,123 +60,53 @@ public class SeamCarver {
        double delta_y= 0;
        double temp = 0;
        
-       temp = (data[x-1][y].R - data[x+1][y].R);
+       temp = (data[y][x-1].R - data[y][x+1].R);
        delta_x += temp*temp;
-       temp = (data[x-1][y].G - data[x+1][y].G);
+       temp = (data[y][x-1].G - data[y][x+1].G);
        delta_x += temp*temp;
-       temp = (data[x-1][y].B - data[x+1][y].B);
+       temp = (data[y][x-1].B - data[y][x+1].B);
        delta_x += temp*temp;
        
-       temp = (data[x][y-1].R - data[x][y+1].R);
+       temp = (data[y-1][x].R - data[y+1][x].R);
        delta_x += temp*temp;
-       temp = (data[x][y-1].G - data[x][y+1].G);
+       temp = (data[y-1][x].G - data[y+1][x].G);
        delta_x += temp*temp;
-       temp = (data[x][y+1].B - data[x][y+1].B);
+       temp = (data[y-1][x].B - data[y+1][x].B);
        delta_x += temp*temp;
        
        return (delta_x + delta_y);
    }
    public   int[] findHorizontalSeam()               // sequence of indices for horizontal seam
    {
-       PriorityQueue<Frontier> pq = new PriorityQueue<Frontier>(new Comparator<Frontier>() {
-           public int compare(Frontier f1, Frontier f2) {
-               return Double.compare(f1.cost,f2.cost);
-           }
-       });
-       
-       double cost[][] = new double[width][height];
-       for(int i =0; i<height;i++)
-           for(int j =0; j<width;j++){
-               cost[j][i] = Integer.MAX_VALUE;
-           }
-       for(int i =0; i<height;i++){
-           Frontier f = new Frontier();
-           f.cost = energy(0,i);
-           cost[0][i] = f.cost;
-           f.path.add(i);
-           pq.add(f);
-       }
-       
-       int w=0;
-       while(w < width-1 && !pq.isEmpty()){
-           Frontier f = pq.poll();
-           int idx = f.path.getLast();
-           
-           Frontier f1 = new Frontier();
-           f1.cost = energy(f.h+1,idx);
-           f1.path = (LinkedList<Integer>) f.path.clone();
-           f1.path.add(idx);
-           
-           if(f.h + 1 > w){
-               w = f.h + 1;
-               
-           } 
-           f1.h = f.h + 1;
-           if(cost[f1.h][idx] > f1.cost ){
-               pq.add(f1);
-               cost[f1.h][idx] = f1.cost;
-           }
-           
-           if(idx > 1){
-               f1 = new Frontier();
-               f1.cost = energy(f.h + 1, idx - 1);
-               f1.path = (LinkedList<Integer>) f.path.clone();
-               f1.path.add(idx - 1);
-               f1.h = f.h + 1;
-               if(cost[f1.h][idx - 1] > f1.cost ){
-                   cost[f1.h][idx - 1] = f1.cost;
-                   pq.add(f1);
-               }
-           }
-           
-           if(idx < height-1){
-               f1 = new Frontier();
-               f1.cost = energy(f.h + 1, idx + 1);
-               f1.path = (LinkedList<Integer>) f.path.clone();
-               f1.path.add(idx + 1);
-               f1.h = f.h + 1;
-               if(cost[f1.h][idx + 1] > f1.cost ){
-                   cost[f1.h][idx + 1] = f1.cost;
-                   pq.add(f1);
-               }
-           }
-
-       }
-       
-       Frontier f = pq.poll();
-       while(f.h < width -1 ){
-           f = pq.poll();
-       }
-       
-       int res[] = new int[f.path.size()];
-       
-       int index = 0;
-       for(int i : f.path){
-           res[index++] = i;
-       }
-       
-       return res;
+	   if(!isTransposted)
+    	   transpose();
+	   
+	   int res[] = findVerticalSeam();
+	   
+	   return res;
    }
    public   int[] findVerticalSeam()                 // sequence of indices for vertical seam
    {
-       
+	   if(isTransposted)
+    	   transpose();
+	   
        PriorityQueue<Frontier> pq = new PriorityQueue<Frontier>(new Comparator<Frontier>() {
            public int compare(Frontier f1, Frontier f2) {
                return Double.compare(f1.cost,f2.cost);
            }
        });
        
-       double cost[][] = new double[width][height];
+       double cost[][] = new double[height][width];
        for(int i =0; i<height;i++)
            for(int j =0; j<width;j++){
-               cost[j][i] = Integer.MAX_VALUE;
+               cost[i][j] = Integer.MAX_VALUE;
        }
        
        
-       for(int i =0; i<height;i++){
+       for(int i =0; i<width;i++){
            Frontier f = new Frontier();
            f.cost = energy(i,0);
-           cost[i][0] = f.cost;
+           cost[0][i] = f.cost;
            f.path.add(i);
            pq.add(f);
        }
@@ -192,8 +125,8 @@ public class SeamCarver {
                h = f.h + 1;
            }
            f1.h = f.h + 1;
-           if(cost[idx][f1.h] > f1.cost ){
-               cost[idx][f1.h] = f1.cost;
+           if(cost[f1.h][idx] > f1.cost ){
+               cost[f1.h][idx] = f1.cost;
                pq.add(f1);
            }
            
@@ -203,8 +136,8 @@ public class SeamCarver {
                f1.path = (LinkedList<Integer>) f.path.clone();
                f1.path.add(idx - 1);
                f1.h = f.h + 1;
-               if(cost[idx][f1.h] > f1.cost ){
-                   cost[idx][f1.h] = f1.cost;
+               if(cost[f1.h][idx] > f1.cost ){
+                   cost[f1.h][idx] = f1.cost;
                    pq.add(f1);
                }
                
@@ -216,8 +149,8 @@ public class SeamCarver {
                f1.path = (LinkedList<Integer>) f.path.clone();
                f1.path.add(idx + 1);
                f1.h = f.h + 1;
-               if(cost[idx][f1.h] > f1.cost ){
-                   cost[idx][f1.h] = f1.cost;
+               if(cost[f1.h][idx] > f1.cost ){
+                   cost[f1.h][idx] = f1.cost;
                    pq.add(f1);
                }
                
@@ -243,41 +176,53 @@ public class SeamCarver {
        if(seam == null)
            throw new NullPointerException("Null reference to seam");
        
-       if(seam.length !=  width-1)
-           throw new IllegalArgumentException ("seam.length !=  width");
+       if(!isTransposted)
+    	   transpose();
        
-     transpose();
+       if(seam.length !=  width)
+           throw new IllegalArgumentException (String.format("seam.length (%d) !=  width (%d)",seam.length,width));
+       
+       
      removeVerticalSeam(seam);
-     transpose();
+     
        
    }
    public    void removeVerticalSeam(int[] seam)     // remove vertical seam from current picture
    {
        if(seam == null)
            throw new NullPointerException("Null reference to seam");
-       if(seam.length !=  width-1)
-           throw new IllegalArgumentException ("seam.length !=  height");
        
-       for(int i =0; i<width;i++){
-           RGB t[] = new RGB[height-1];
+       if(isTransposted)
+    	   transpose();
+       
+       if(seam.length !=  height)
+           throw new IllegalArgumentException ("seam.length !=  height");
+      
+       
+       
+       for(int i =0; i<height;i++){
+           RGB t[] = new RGB[width-1];
+           	if(seam[i] > 0)
             System.arraycopy(data[i], 0, t, 0, seam[i]-1);
-            System.arraycopy(data[i], seam[i]+1, t, seam[i], height-seam[i]);
+           	if(width-seam[i] > 0 )
+            System.arraycopy(data[i], seam[i]+1, t, seam[i], width-1-seam[i]);
             data[i] = t;
         }
-        height=height-1;
+        width=width-1;
    }
    
    private void transpose(){
        
-       RGB data_t [][] = new RGB[height][width];
+       RGB data_t[][] = new RGB[width][height];
        
-       data_t = new RGB[height][width];
        for(int i =0; i<height;i++)
            for(int j =0; j<width;j++){
-               data_t[i][j] = data[j][i];
+               data_t[j][i] = data[i][j];
            }
        data = data_t;
-       
+       int t = height;
+       height = width;
+       width = t ;
        if(isTransposted){
            isTransposted = false;
        } else {
